@@ -3,6 +3,19 @@ $dark-bg-color: #121212;
 $dark-bg-var: #212121;
 $text-color: #a0a0a0;
 
+// social media icon colors
+$telegram-icon-color: #0088cc;
+$facebook-icon-color: #3b5998;
+$twitter-icon-color: #1da1f2;
+$linkedin-icon-color: #0077b5;
+$youtube-icon-color: #ff0000;
+$github-icon-color: rgb(240, 246, 252);
+
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital@0;1&display=swap");
+
 %flex {
   display: flex;
   align-items: center;
@@ -25,274 +38,19 @@ $text-color: #a0a0a0;
   }
 }
 
-body {
-  background-color: $dark-bg-color;
-  min-height: calc(100vh - 150px);
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Proza Libre", sans-serif;
 }
 
-a {
-  color: inherit;
+p,
+div {
+  font-family: "Open Sans", sans-serif;
 }
+
 ul li {
   list-style: none;
-}
-
-#logo {
-  fill: $text-color;
-}
-
-nav {
-  .navbar-brand {
-    max-height: 50px;
-  }
-  .navbar-brand svg {
-    transform: scale(0.7);
-  }
-  #initB {
-    opacity: 25%;
-  }
-  #login-nav {
-    margin-left: 0 !important;
-  }
-}
-
-#particles-js {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-}
-
-.modal {
-  .modal-content {
-    // background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background: #232429;
-    background-blend-mode: multiply, multiply;
-
-    // background-image: linear-gradient(to right, #434343 0%, black 100%);
-
-    // background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    color: #f4f5f6;
-
-    .form-label {
-      color: #6d6d73;
-    }
-    .btn-sign-in {
-      background: #408bff;
-      color: #f4f5f6;
-    }
-  }
-}
-
-.form-control {
-  //   border: 1px solid #bdbdbd !important;
-}
-
-.form-control:focus {
-  // border: 1px solid #1266f1 !important;
-}
-
-main {
-  section.container {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  section#intro {
-    @include flexCenter;
-    color: $text-color;
-
-    .card.intro {
-      width: inherit;
-      height: fit-content;
-      position: relative;
-      margin: 30px;
-      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-      background: rgba(255, 255, 255, 0.1);
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
-      border-left: 1px solid rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(5px);
-      .intro-img {
-        margin: 1%;
-        display: grid;
-        place-content: center;
-      }
-
-      .card-body-parent {
-        display: grid;
-        place-content: center;
-        font-size: 1.1rem;
-
-        .card-body {
-          i {
-            opacity: 0.5;
-          }
-          .card-title {
-          }
-          h5 {
-          }
-          p.p1 {
-            a {
-              i {
-                display: none;
-                margin-left: 5px;
-              }
-              &:hover {
-                i {
-                  display: inherit;
-                }
-              }
-            }
-          }
-          p.remaining {
-            @include mq(800px) {
-              display: none;
-            }
-          }
-          .see-more {
-            display: none;
-            place-content: center;
-
-            i {
-              @include mq(800px) {
-                line-height: unset;
-                margin-left: 5px;
-              }
-            }
-            @include mq(800px) {
-              display: grid;
-              grid-auto-flow: column;
-            }
-            p.p1 {
-              @include mq(800px) {
-                margin-bottom: 0;
-              }
-            }
-          }
-
-          &:hover {
-            a {
-              color: hsla(0, 0%, 100%, 0.75);
-            }
-          }
-        }
-      }
-    }
-  }
-
-  section#abilities {
-    .swiper-slide {
-      position: relative;
-      background: rgb(177, 177, 177);
-      max-width: 300px;
-      max-height: 500px;
-      margin: 0 auto;
-      border-radius: 10px;
-
-      img {
-        width: 100%;
-        max-height: 150px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-
-      p {
-        padding: 1rem;
-      }
-    }
-  }
-}
-
-footer {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
-
-  .social-media {
-    position: relative;
-    background: inherit;
-    display: grid;
-    grid-auto-flow: column;
-    place-content: center;
-    margin-bottom: 0;
-    margin-top: 0.3rem;
-    padding-left: 0;
-
-    li {
-      margin: 0 1rem;
-      cursor: pointer;
-      position: relative;
-
-      &:hover::before {
-        height: 100%;
-      }
-
-      i {
-        color: rgb(58, 58, 58);
-      }
-
-      &::before {
-        font-family: "Font Awesome 5 Brands";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0;
-        overflow: hidden;
-        transition: 0.5s ease-in-out;
-      }
-
-      &:nth-child(1)::before {
-        content: "\f09b";
-        color: #333;
-        border-bottom: 1px solid #333;
-      }
-
-      &:nth-child(2)::before {
-        content: "\f2c6";
-        color: #0088cc;
-        border-bottom: 1px solid #0088cc;
-      }
-
-      &:nth-child(3)::before {
-        content: "\f167";
-        color: #c4302b;
-        border-bottom: 1px solid #c4302b;
-      }
-
-      &:nth-child(4)::before {
-        content: "\f099";
-        color: #00acee;
-        border-bottom: 1px solid #00acee;
-      }
-
-      &:nth-child(5)::before {
-        content: "\f09a";
-        color: #3b5998;
-        border-bottom: 1px solid #3b5998;
-      }
-
-      &:nth-child(6)::before {
-        content: "\f08c";
-        color: rgb(40, 103, 178);
-        border-bottom: 1px solid rgb(40, 103, 178);
-      }
-    }
-  }
-
-  .brand-logo {
-    a {
-      font-size: smaller;
-
-      svg {
-        max-height: 50px;
-        transform: scale(0.7);
-        opacity: 0.7;
-      }
-    }
-  }
 }

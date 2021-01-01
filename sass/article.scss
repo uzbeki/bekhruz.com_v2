@@ -1,3 +1,5 @@
+@import "_base.scss";
+
 body {
   display: grid;
   place-items: center;
@@ -10,10 +12,11 @@ main {
     width: 744px;
 
     #title {
-      font-size: 3rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     #subtitle {
+      font-style: italic;
       margin-top: 0;
       font-size: 1.5rem;
     }
@@ -36,6 +39,15 @@ main {
         }
         #name-and-date {
           margin-left: 1rem;
+          #author-name {
+            font-size: 1.3rem;
+          }
+          @include mq(500px) {
+            #author-name {
+              font-size: 1.5rem;
+            }
+            font-size: 1.3rem;
+          }
         }
       }
       #share-btn {
@@ -47,6 +59,31 @@ main {
           li {
             list-style: none;
             margin: 0 0.5rem;
+            font-size: 1.5rem;
+            .fa-telegram {
+              color: $telegram-icon-color;
+            }
+            .fa-facebook {
+              color: $facebook-icon-color;
+            }
+            .fa-twitter {
+              color: $twitter-icon-color;
+            }
+            .fa-linkedin {
+              color: $linkedin-icon-color;
+            }
+
+            &:hover {
+              i {
+                transform: scale(1.1);
+              }
+            }
+
+            @include mq(500px) {
+              & {
+                font-size: 2.5rem;
+              }
+            }
           }
         }
       }
@@ -63,7 +100,7 @@ main {
 
       figcaption {
         text-align: center;
-        opacity: .7;
+        opacity: 0.7;
       }
     }
 
@@ -72,6 +109,11 @@ main {
         font-size: 1.2em;
         line-height: 2.2rem;
         text-anchor: start;
+
+        @include mq(500px) {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
       }
     }
   }

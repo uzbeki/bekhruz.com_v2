@@ -5,7 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Bekhruz Otaev">
+  <meta name="description"
+    content="Articles and blogs about software development, coding, and everything related to programming.">
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:author" content="" />
+  <meta property="og:author-img" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
   <link rel="stylesheet" href="compiled/css/article.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
   <title>Articles</title>
 </head>
 
@@ -14,34 +26,52 @@
 
   <main>
     <article class="section" id="article">
-      <h1 id="title">My little one</h1>
-      <h3 id="subtitle">Mr.Bunny rules the garden</h3>
+      <h1 id="title">The ultimate power is what?</h1>
+      <h3 id="subtitle">Based on my real-life observations</h3>
       <div class="author share-sns">
         <div id="author">
           <div id="author-img">
-            <img src="img/python.png" alt="" srcset="">
+            <img id="author-img-src" src="img/beki_mini.jpg" alt="" srcset="">
           </div>
           <div id="name-and-date">
             <div id="author-name">Bekhruz Otaev</div>
-            <div id="published-date">December 22, 2020
-              <span id="read-time">2min read</span>
-            </div>
+            <time id="published-date">December 22, 2020 |
+              <span id="read-time">3 min read</span>
+            </time>
           </div>
         </div>
 
         <div id="share-btn">
           <ul class="share-list">
-            <li>tl</li>
-            <li>fc</li>
-            <li>tw</li>
-            <li>ln</li>
+            <li>
+              <a class="telegram-btn" href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="facebook-btn" href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="twitter-btn" href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="linkedin-btn" href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div id="article-image">
-        <img src="img/aws.jpg" alt="" srcset="">
-        <figcaption>Image credits:...</figcaption>
+        <img id="article-image-src"
+          src="https://media-exp1.licdn.com/dms/image/C5612AQGy-zVWY1uGug/article-cover_image-shrink_720_1280/0/1597080995448?e=1614816000&v=beta&t=C1pw2O50i0zRUVSIcENwfwDl8iGbbN0o86DjMMQXcuk"
+          alt="" srcset="">
+        <figcaption>Image credits: https://www.kmslh.com/</figcaption>
       </div>
 
       <div id="article-content">
@@ -86,7 +116,7 @@
 
 
 
-
+  <script src="js\article\article_social.js"></script>
 </body>
 
 </html>
