@@ -13,8 +13,29 @@ $github-icon-color: rgb(240, 246, 252);
 
 
 // fonts
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital@0;1&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital@0;1&display=swap");
+
+
+
+@font-face{
+  font-family: 'Open Sans'; /* Define the custom font name */
+  src:  url('../fonts/articles/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/articles/Open_Sans/OpenSans-Regular.ttf') format('truetype'); /* Define where the font can be downloaded */
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+
+@font-face{
+  font-family: 'Proza Libre'; /* Define the custom font name */
+  src:  url('../fonts/articles/Proza_Libre/ProzaLibre-Italic.woff2') format('woff2'),
+        url('../fonts/articles/Proza_Libre/ProzaLibre-Italic.ttf') format('truetype'); /* Define where the font can be downloaded */
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+}
 
 %flex {
   display: flex;
