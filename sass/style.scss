@@ -33,17 +33,18 @@ nav {
   z-index: -1;
   height: 100%;
   width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
 }
 
 .modal {
   .modal-content {
-    // background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background: #232429;
     background-blend-mode: multiply, multiply;
 
-    // background-image: linear-gradient(to right, #434343 0%, black 100%);
-
-    // background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     color: #f4f5f6;
 
     .form-label {
@@ -56,13 +57,6 @@ nav {
   }
 }
 
-.form-control {
-  //   border: 1px solid #bdbdbd !important;
-}
-
-.form-control:focus {
-  // border: 1px solid #1266f1 !important;
-}
 
 main {
   section.container {

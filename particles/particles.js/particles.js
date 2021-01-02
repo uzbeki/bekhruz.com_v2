@@ -16,7 +16,7 @@ var pJS = function(tag_id, params){
     canvas: {
       el: canvas_el,
       w: canvas_el.offsetWidth,
-      h: canvas_el.offsetHeight
+      h: document.body.clientHeight
     },
     particles: {
       number: {
@@ -166,7 +166,7 @@ var pJS = function(tag_id, params){
     }
 
     pJS.canvas.w = pJS.canvas.el.offsetWidth * pJS.canvas.pxratio;
-    pJS.canvas.h = pJS.canvas.el.offsetHeight * pJS.canvas.pxratio;
+    pJS.canvas.h = document.body.clientHeight * pJS.canvas.pxratio;
 
     pJS.particles.size.value = pJS.tmp.obj.size_value * pJS.canvas.pxratio;
     pJS.particles.size.anim.speed = pJS.tmp.obj.size_anim_speed * pJS.canvas.pxratio;
@@ -191,23 +191,23 @@ var pJS = function(tag_id, params){
   pJS.fn.canvasSize = function(){
 
     pJS.canvas.el.width = pJS.canvas.w;
-    pJS.canvas.el.height = pJS.canvas.h;
+    pJS.canvas.el.height = document.body.clientHeight;
 
     if(pJS && pJS.interactivity.events.resize){
 
       window.addEventListener('resize', function(){
 
           pJS.canvas.w = pJS.canvas.el.offsetWidth;
-          pJS.canvas.h = pJS.canvas.el.offsetHeight;
+          pJS.canvas.h = document.body.clientHeight;
 
           /* resize canvas */
           if(pJS.tmp.retina){
             pJS.canvas.w *= pJS.canvas.pxratio;
-            pJS.canvas.h *= pJS.canvas.pxratio;
+            document.body.clientHeight *= pJS.canvas.pxratio;
           }
 
           pJS.canvas.el.width = pJS.canvas.w;
-          pJS.canvas.el.height = pJS.canvas.h;
+          pJS.canvas.el.height = document.body.clientHeight;
 
           /* repaint canvas on anim disabled */
           if(!pJS.particles.move.enable){
@@ -1166,7 +1166,7 @@ var pJS = function(tag_id, params){
     if(pJS.particles.number.density.enable){
 
       /* calc area */
-      var area = pJS.canvas.el.width * pJS.canvas.el.height / 1000;
+      var area = pJS.canvas.el.width * document.body.clientHeight / 1000;
       if(pJS.tmp.retina){
         area = area/(pJS.canvas.pxratio*2);
       }
@@ -1507,7 +1507,8 @@ window.particlesJS = function(tag_id, params){
 
   /* set size canvas */
   canvas_el.style.width = "100%";
-  canvas_el.style.height = "100%";
+  // canvas_el.style.height = "100%";
+  canvas_el.style.height = document.body.clientHeight;
 
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);
