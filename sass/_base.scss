@@ -11,7 +11,6 @@ $linkedin-icon-color: #0077b5;
 $youtube-icon-color: #ff0000;
 $github-icon-color: rgb(240, 246, 252);
 
-
 // fonts
 // @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 // @import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital@0;1&display=swap");
@@ -74,4 +73,9 @@ div {
 
 ul li {
   list-style: none;
+}
+
+.fa-fw{
+  display: inline-block;
+  width: 1.28571429em;
 }
