@@ -23,8 +23,31 @@ nav {
   #initB {
     opacity: 25%;
   }
+  .nav-item{
+    padding-left: 0.75rem;
+  }
   #login-nav {
     margin-left: 0 !important;
+    
+    #language_selector {
+      color: $text-color;
+      border: none;
+      box-shadow: none;
+      transform: translateX(-0.75rem);
+      
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+    a::after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f2f6";
+      display: inline-block;
+      padding-left: 3px;
+      vertical-align: middle;
+      font-weight: 900;
+    }
   }
 }
 
@@ -184,7 +207,14 @@ footer {
   margin-top: 2rem;
   padding-top: 1rem;
   background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-content: center;
 
+  .input-group {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+  }
   .social-media {
     position: relative;
     background: inherit;
@@ -199,7 +229,7 @@ footer {
       margin: 0 1rem;
       cursor: pointer;
       position: relative;
-      
+
       &:hover {
         transform: scale(1.2);
         transition: transform 0.2s;
