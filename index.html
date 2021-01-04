@@ -41,7 +41,7 @@
 <body>
 
   <!-- Navigation start-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Navbar brand -->
@@ -92,13 +92,13 @@
         </svg></a>
 
       <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseMenu"
+        aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
 
       <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="collapseMenu">
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-lg-0">
           <li class="nav-item">
@@ -109,12 +109,12 @@
           </li>
           <!-- Navbar dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-lang-item="nav_covid19" role="button" data-mdb-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" data-lang-item="nav_covid19" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
               Covid-19
             </a>
             <!-- Dropdown menu -->
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="covid19">
+            <ul class="dropdown-menu" aria-labelledby="covid19">
               <li><a class="dropdown-item" data-lang-item="nav_action1" href="#">Action</a></li>
               <li><a class="dropdown-item" data-lang-item="nav_action2" href="#">Another action</a></li>
               <li>
@@ -134,18 +134,85 @@
         </ul>
         <!-- Left links -->
 
-        <div class="nav-item navbar-nav mx-3" id="login-nav">
-          <div class="nav-item nav-link form-control-group">
-            <select class="custom-select-sm form-control bg-dark" id="language_selector" aria-multiselectable="false">
-              <option value="en" data-reload>English</option>
-              <option value="uz" data-reload selected>O'zbekcha</option>
-              <option value="ja" data-reload>日本語</option>
-            </select>
+
+        <!-- LOGIN STARTS HEREEEEEEEEEE -->
+        <div class="nav-item navbar-nav" id="login-nav">
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="settingsDropdown" aria-expanded="false">
+              <i class="fas fa-cog fa-lg"></i>
+            </button>
+            <div class="dropdown-menu-custom show" aria-labelledby="settingsDropdown">
+              <div class="dropdown-item language d-flex align-items-center">
+                <label for="language_selector">Language</label>
+                <select class="select form-control bg-dark" id="language_selector" aria-multiselectable="false">
+                  <option value="en" data-reload>En</option>
+                  <option value="uz" data-reload>Uz</option>
+                  <option value="ja" data-reload>Ja</option>
+                </select>
+
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="language_dropdown" role="button"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="united kingdom flag m-0"></i>
+                  </a>
+                  <ul class="submenu dropdown-menu-dark" aria-labelledby="language_dropdown">
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English
+                        <i class="fa fa-check text-success ms-2"></i></a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="poland flag"></i>Polski</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="china flag"></i>中文</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="japan flag"></i>日本語</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="germany flag"></i>Deutsch</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="france flag"></i>Français</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="spain flag"></i>Español</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="russia flag"></i>Русский</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><i class="portugal flag"></i>Português</a>
+                    </li>
+                  </ul>
+                </li> -->
+              </div>
+              <div class="dropdown-item theme d-flex justify-content-between">
+                <label for="dark_mode_toggle_div">Theme</label>
+                <div class="theme-toggle" id="dark_mode_toggle_div">
+                  <input type="checkbox" name="dark_mode_toggle" id="dark_mode_toggle" checked
+                    aria-label="toggle dark mode">
+                  <label for="dark_mode_toggle" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                  </label>
+                </div>
+              </div>
+              <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </div>
           </div>
 
-          <a class="nav-link" href="#" role="button" data-lang-item="nav_login" aria-expanded="false" class="btn btn-dark" data-mdb-toggle="modal"
-            data-mdb-target="#login-modal"> Login </a>
-            <!-- <span><i class="fas fa-fw fa-sign-in-alt"></i></span>  -->
+
+
+          <a class="nav_login nav-link" href="#" role="button" data-lang-item="nav_login" aria-expanded="false"
+            data-mdb-toggle="modal" data-mdb-target="#login-modal"> Login </a>
+          <!-- <span><i class="fas fa-fw fa-sign-in-alt"></i></span>  -->
         </div>
       </div>
       <!-- Collapsible wrapper -->
@@ -188,36 +255,37 @@
                 <!-- Checkbox -->
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="rememberme" checked />
-                  <label class="form-check-label" data-lang-item="login_remember_me" for="rememberme"> Remember me </label>
+                  <label class="form-check-label" data-lang-item="login_remember_me" for="rememberme"> Remember me
+                  </label>
                 </div>
               </div>
               <div class="col">
                 <!-- Simple link -->
-                <a href="#!"data-lang-item="login_forgot_password">Forgot password?</a>
+                <a href="#!" data-lang-item="login_forgot_password">Forgot password?</a>
               </div>
             </div>
 
             <!-- Submit button -->
-            <button type="submit" class="btn btn-block mb-4 btn-sign-in"data-lang-item="login_sign_in" >Sign in</button>
+            <button type="submit" class="btn btn-block mb-4 btn-sign-in" data-lang-item="login_sign_in">Sign in</button>
 
             <!-- Register buttons -->
             <div class="text-center">
               <p data-lang-item="login_not_member">Not a member? </p>
-              <a href="#!"data-lang-item="login_register">Register</a>,
+              <a href="#!" data-lang-item="login_register">Register</a>,
               <p data-lang-item="login_or_sign_up">or sign up with:</p>
-              <button type="button" class="btn btn-dark btn-floating mx-1">
+
+              <button type="button" class="btn btn-floating mx-1 btn-facebook">
                 <i class="fab fa-facebook-f"></i>
               </button>
-
-              <button type="button" class="btn btn-dark btn-floating mx-1">
-                <i class="fab fa-google"></i>
+              <button type="button" class="btn btn-floating mx-1  btn-google">
+                <i class="fab google-icon"></i>
               </button>
 
-              <button type="button" class="btn btn-dark btn-floating mx-1">
+              <button type="button" class="btn btn-floating mx-1  btn-twitter">
                 <i class="fab fa-twitter"></i>
               </button>
 
-              <button type="button" class="btn btn-dark btn-floating mx-1">
+              <button type="button" class="btn btn-floating mx-1  btn-github">
                 <i class="fab fa-github"></i>
               </button>
             </div>
@@ -233,7 +301,7 @@
   <main>
     <!-- Intro Section -->
     <section id="intro" class="container">
-      <div class="card intro ripple">
+      <div class="card intro">
         <div class="row g-0">
           <div class="col-md intro-img">
             <picture>
@@ -247,9 +315,11 @@
             <div class="card-body">
               <h3 class="card-title">Bekhruz Otaev</h3>
               <h5>
-                <span class="txt-rotate" data-period="1000" data-rotate='[ "Software Engineer", "&#127877;Happy New Year!&#127876;", "Traveller", "Front-end developer", "Back-end developer", "Language Learner"]'></span>
+                <span class="txt-rotate" data-period="1000"
+                  data-rotate='[ "Software Engineer", "&#127877;Happy New Year!&#127876;", "Traveller", "Front-end developer", "Back-end developer", "Language Learner"]'></span>
                 <!-- <i class="fas fa-fw fa-pencil-alt"></i> -->
               </h5>
+
               <p class="card-text p1" data-lang-item="intro_p1">Growing up in the outskirts of <a target="_blank"
                   href="https://en.wikipedia.org/wiki/Bukhara" data-lang-item="intro_p1_bukhara">
                   Bukhara<i class="fas fa-external-link-alt"></i></a>,
@@ -261,7 +331,8 @@
                 for myself. Here I am, after a few years, working abroad in Japan. The rest is history.
               </p>
               <p class="card-text see-more">
-                <small class="text-muted" data-lang-item="intro_see_more">see more</small> <i class="fas fa-angle-double-down"></i>
+                <small class="text-muted" data-lang-item="intro_see_more">see more</small> <i
+                  class="fas fa-angle-double-down"></i>
               </p>
             </div>
           </div>
@@ -287,28 +358,32 @@
               <img src="img/Javascript.png" alt="" srcset="">
             </picture>
             <h4 class="technology-name card-header">JavaScript</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_js">I have been using JavaScript in most of my projects. The ones you can
+            <p class="technology-desctiption" data-lang-item="swiper_js">I have been using JavaScript in most of my
+              projects. The ones you can
               directly see are Covid-19 data analyzer, Reversi game and the page you are looking at has some JS
               involved. Check out the source codes in my Github profile.</p>
           </div>
           <div class="swiper-slide card shadow">
             <img src="img/html.png" alt="" srcset="">
             <h4 class="technology-name card-header">HTML5</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_html5">HTML5 was my introduction to programming. It is a new version of the
+            <p class="technology-desctiption" data-lang-item="swiper_html5">HTML5 was my introduction to programming. It
+              is a new version of the
               language HTML, with new elements, attributes, and behaviors that allows more diverse and powerful Web
               sites and applications. Please refer to the inspection window to look at how I code in HTML.</p>
           </div>
           <div class="swiper-slide">
             <img src="img/css.png" alt="" srcset="">
             <h4 class="technology-name card-header">CSS</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_css">I would be no developer if I did not know CSS. It is what styles all of
+            <p class="technology-desctiption" data-lang-item="swiper_css">I would be no developer if I did not know CSS.
+              It is what styles all of
               the web. Besides plain css, I also use preprocessors like Sass, CSS powered frameworks like Bootstrap and
               Tailwind CSS in my projects. Curious to find out how this page's design came to be?</p>
           </div>
           <div class="swiper-slide">
             <img src="img/django.png" alt="" srcset="">
             <h4 class="technology-name card-header">Django</h4>
-            <p class="technology-description" data-lang-item="swiper_django">Django was my very first step towards full-stack development. It is at the
+            <p class="technology-description" data-lang-item="swiper_django">Django was my very first step towards
+              full-stack development. It is at the
               core of my personal website and projects that involve databases and REST APIs. Django's model architecture
               makes it easier for me to work with different databases. Plus, I can scale anything up in no time with
               Django.</p>
@@ -320,7 +395,8 @@
               <img src="img/python.png" alt="" srcset="">
             </picture>
             <h4 class="technology-name card-header">Python</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_python">Python - the language on the hype, yet it is what really pushed me into
+            <p class="technology-desctiption" data-lang-item="swiper_python">Python - the language on the hype, yet it
+              is what really pushed me into
               determining my career. I have created news aggregators, web-scrapers, user authentication systems,
               websites, automated my workflow with Python. Given the adequate time, I can do almost anything - any thing
               with Python.</p>
@@ -333,7 +409,8 @@
               <img src="img/aws.jpg" alt="" srcset="">
             </picture>
             <h4 class="technology-name card-header">AWS</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_aws">Amazon's Web Services are really making a lot of our lives easier. I am a
+            <p class="technology-desctiption" data-lang-item="swiper_aws">Amazon's Web Services are really making a lot
+              of our lives easier. I am a
               customer, myself, deploying my projects, using AWS databases, storing my files and so on to the cloud. If
               you are thinking of scaling your business to the next level, AWS is a way to go, and I am happy to help!
             </p>
@@ -342,7 +419,8 @@
           <div class="swiper-slide">
             <img src="img/C.png" alt="" srcset="">
             <h4 class="technology-name card-header">C</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_c">C is the father of programming languages, some say. I first got to work
+            <p class="technology-desctiption" data-lang-item="swiper_c">C is the father of programming languages, some
+              say. I first got to work
               with it in my first job. I created command line games, binary file analyzers and back-end systems with it.
               It is super fast. In case you're into embedded systems development and you need a hand, let me know.</p>
           </div>
@@ -353,7 +431,8 @@
               <img src="img/kotlin.png" alt="" srcset="">
             </picture>
             <h4 class="technology-name card-header">Kotlin</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_kotlin">Yes, I can also create mobile applications using Kotlin in Android Studio.
+            <p class="technology-desctiption" data-lang-item="swiper_kotlin">Yes, I can also create mobile applications
+              using Kotlin in Android Studio.
               Although I am new to mobile app development, creating an app of any complexity is one search away, if you
               know what I mean. I have created calculators, educational testing apps and a music player.</p>
           </div>
@@ -370,10 +449,10 @@
 
 
   <!-- Footer -->
-  <footer class="bg-dark text-center text-lg-start">
+  <footer class="text-center text-lg-start">
     <ul class="social-media">
       <li><a href="https://github.com/uzbeki" target="_blank"><i loading="lazy" class="fab fa-fw fa-github"
-            style="color: rgb(240, 246, 252);"></i></a>
+            ></i></a>
       </li>
       <li><a href="https://t.me/BekhruzOtaev" target="_blank"><i loading="lazy" class="fab fa-fw fa-telegram"
             style="color: #0088cc;" aria-hidden="true"></i></a>
@@ -442,6 +521,7 @@
   <!-- post-scripts -->
   <script src="js/swiper/swiper-bundle.min.js"></script>
   <script src="js/lang.js" defer></script>
+
 </body>
 
 </html>

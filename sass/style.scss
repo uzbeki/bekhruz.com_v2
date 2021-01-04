@@ -1,7 +1,7 @@
 @import "_base.scss";
 
 body {
-  background-color: $dark-bg-color;
+  background-color: var(--dark-bg-color);
   min-height: calc(100vh - 150px);
 }
 
@@ -10,12 +10,20 @@ a {
 }
 
 #logo {
-  fill: $text-color;
+  fill: var(--text-color);
 }
 
 nav {
+  background-color: var(--navbar-dark);
   .navbar-brand {
     max-height: 50px;
+  }
+  a, .dropdown-item {
+    color: var(--navbar-dark-text);
+
+    &:hover {
+      color: inherit;
+    }
   }
   .navbar-brand svg {
     transform: scale(0.7);
@@ -23,28 +31,130 @@ nav {
   #initB {
     opacity: 25%;
   }
-  .nav-item{
+  #collapseMenu {
+    ul.dropdown-menu {
+      background-color: var(--dark-dropdown-bg);
+      border-color: var(--swiper-slide-border);
+      // color: var(--navbar-dark-text);
+    }
+  }
+
+  .nav-item {
     padding-left: 0.75rem;
   }
   #login-nav {
     margin-left: 0 !important;
-    
+    label {
+      margin-right: 1rem;
+      background-color: inherit;
+    }
+    #settingsDropdown {
+      padding-left: 0;
+      color: var(--text-color);
+      border-color: inherit;
+      box-shadow: none;
+      i {
+        transition: transform 0.5s ease-in-out;
+      }
+      &:hover,
+      &:focus {
+        background-color: inherit;
+        border-color: inherit;
+
+        i {
+          transform: scale(1.2) rotate(360deg);
+        }
+      }
+    }
+    .dropdown-menu-custom {
+      color: #e0e0e0;
+      position: absolute;
+      top: 100%;
+      left: -100%;
+      z-index: 1000;
+      display: none;
+      min-width: 10rem;
+      padding: 0.5rem 0;
+      text-align: left;
+      list-style: none;
+      background-color: #4f4f4f;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+
+      .dropdown-item {
+        color: inherit;
+
+        &:hover {
+          color: #000000;
+        }
+      }
+
+      @include mq(800px) {
+        & {
+          left: 0;
+        }
+      }
+    }
+    .dropdown-menu-custom.show_me {
+      display: inherit;
+    }
     #language_selector {
-      color: $text-color;
+      color: var(--text-color);
       border: none;
       box-shadow: none;
-      transform: translateX(-0.75rem);
-      
+      width: fit-content;
     }
-    a {
+
+    .theme-toggle {
+      .label {
+        position: relative;
+        background-color: #262626;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 50px;
+        height: 26px;
+        width: 60px;
+        margin-right: 0;
+
+        .fa-moon {
+          // color: #f1c40f;
+          color: var(--light-bg-color);
+        }
+        .fa-sun {
+          color: var(--sun-color);
+        }
+      }
+      .ball {
+        width: 22px;
+        height: 22px;
+        background-color: var(--sun-color);
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s linear;
+      }
+      input[type="checkbox"] {
+        opacity: 0;
+        position: absolute;
+      }
+      input[type="checkbox"]:checked + .label .ball {
+        transform: translateX(33px);
+        background-color: var(--light-bg-color);
+      }
+    }
+    a.nav_login {
       display: flex;
       align-items: center;
     }
-    a::after {
+    a.nav_login::after {
       font-family: "Font Awesome 5 Free";
       content: "\f2f6";
       display: inline-block;
-      padding-left: 3px;
+      margin-left: 5px;
       vertical-align: middle;
       font-weight: 900;
     }
@@ -64,17 +174,40 @@ nav {
 
 .modal {
   .modal-content {
-    background: #232429;
+    background: var(--navbar-dark);
     background-blend-mode: multiply, multiply;
 
-    color: #f4f5f6;
+    color: var(--btn-text-color);
 
     .form-label {
-      color: #6d6d73;
+      color: var(--text-color);
     }
     .btn-sign-in {
-      background: #408bff;
-      color: #f4f5f6;
+      background: var(--btn-accent-color);
+      color: var(--btn-text-color);
+      font-size: inherit;
+    }
+    button {
+      i {
+        color: var(--github-icon-color);
+        font-size: 1.4rem;
+      }
+    }
+    .btn-facebook {
+      background-color: var(--facebook-icon-color);
+    }
+    .btn-google {
+      i {
+        &::before {
+          content: url("../../../img/google.svg");
+        }
+      }
+    }
+    .btn-twitter {
+      background-color: var(--twitter-icon-color);
+    }
+    .btn-github {
+      background-color: var(--github2-icon-color);
     }
   }
 }
@@ -87,22 +220,22 @@ main {
 
   section#intro {
     @include flexCenter;
-    color: $text-color;
+    color: var(--text-color);
 
     .card.intro {
       width: inherit;
       height: fit-content;
       position: relative;
       margin: 30px;
-      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      box-shadow: 20px 20px 50px var(--swiper-slide-border);
       border-radius: 15px;
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--card-intro-transparent-color);
       overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
-      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      border-top: 1px solid var(--card-intro-border-color);
+      border-left: 1px solid var(--card-intro-border-color);
       backdrop-filter: blur(5px);
       .intro-img {
         margin: 1%;
@@ -126,11 +259,10 @@ main {
           i {
             opacity: 0.5;
           }
-          .card-title {
-          }
           h5 {
             font-style: italic;
           }
+
           p.p1 {
             a {
               i {
@@ -144,6 +276,7 @@ main {
               }
             }
           }
+
           p.remaining {
             @include mq(800px) {
               display: none;
@@ -169,12 +302,6 @@ main {
               }
             }
           }
-
-          &:hover {
-            a {
-              color: hsla(0, 0%, 100%, 0.75);
-            }
-          }
         }
       }
     }
@@ -183,7 +310,7 @@ main {
   section#abilities {
     .swiper-slide {
       position: relative;
-      background: rgb(177, 177, 177);
+      background: var(--light-bg-color);
       max-width: 300px;
       height: 470px;
       margin: 0 auto;
@@ -204,9 +331,10 @@ main {
 }
 
 footer {
+  background-color: var(--navbar-dark);
+  box-shadow: 0px -9px 20px 3px rgba(0, 0, 0, 0.24);
   margin-top: 2rem;
   padding-top: 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
   display: grid;
   place-content: center;
 
@@ -234,6 +362,9 @@ footer {
         transform: scale(1.2);
         transition: transform 0.2s;
       }
+      .fa-github {
+        color: var(--github-icon-color);
+      }
     }
   }
 
@@ -250,55 +381,65 @@ footer {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-    color: black;
+.darkMode {
+  --dark-bg-color: white;
+  --light-bg-color: #c0c0c0;
+  --navbar-dark: $navbar-light-color;
+  --navbar-dark-text: $navbar-light-text;
+  --dark-dropdown-bg: #ffffff;
+  --text-color: $navbar-light-text;
+  --text-color2: white;
+  // --btn-accent-color: #408bff;
+  // --btn-text-color: #f4f5f6;
+  // --sun-color: #f39c12;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p,
-    label {
-      color: black;
-    }
+  // --swiper-slide-border: rgba(0, 0, 0, 0.2);
 
-    .nav-item a {
-      color: white !important;
-    }
-    #logo {
-      fill: white;
-    }
-    .card-body:hover a {
-      color: black !important;
-    }
-    .modal-content {
-      background: #ffffff !important;
-      background-blend-mode: multiply, multiply !important;
-
-      color: black !important;
-      .modal-header button {
-        border-color: #1266f1;
-      }
-      .form-label {
-        color: #6d6d73;
-      }
-      .btn-sign-in {
-        background: #408bff;
-        color: #f4f5f6;
-      }
-
-      .text-center button {
-        color: #fff;
-        background-color: #1266f1;
-      }
-    }
-
-    .swiper-slide {
-      background: white !important;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-    }
-  }
+  --card-intro-border-color: rgba(0, 0, 0, 0.9);
+  --card-intro-transparent-color: rgba(0, 0, 0, 0.1);
+  --github-icon-color: $github2-icon-color;
 }
+
+// @media (prefers-color-scheme: light) {
+//   body {
+//     background-color: var(--light-bg-color);
+//     color: var(--text-color2);
+
+//     h1,
+//     h2,
+//     h3,
+//     h4,
+//     h5,
+//     p,
+//     label {
+//       color: var(--text-color2);
+//     }
+
+//     .nav-item a {
+//       color: var(--light-bg-color);
+//     }
+//     #logo {
+//       fill: var(--light-bg-color);
+//     }
+//     .card-body:hover a {
+//       color: var(--text-color2 !important);
+//     }
+//     .modal-content {
+//       background: var(--light-bg-color !important);
+//       background-blend-mode: multiply, multiply !important;
+//       color: var(--text-color2 !important);
+//       label.form-label {
+//         color: var(--btn-accent-color);
+//       }
+//       .btn-sign-in {
+//         background: var(--btn-accent-color);
+//         color: var(--btn-text-color);
+//       }
+//     }
+
+//     .swiper-slide {
+//       background: var(--light-bg-color !important);
+//       border: 1px solid var(--swiper-slide-border);
+//     }
+//   }
+// }

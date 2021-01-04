@@ -1,36 +1,80 @@
 // variables
 $dark-bg-color: #121212;
-$dark-bg-var: #212121;
-$text-color: #a0a0a0;
+$light-bg-color: #c0c0c0;
+$navbar-dark: #262626;
+$navbar-dark-text: #cacaca;
+$dark-dropdown-bg: #4f4f4f;
+$navbar-light-color: #fbfbfb;
+$navbar-light-text: rgba(0,0,0,.9);
+
+$text-color: #cacaca;
+$text-color2: black;
+$btn-accent-color: #408bff;
+$btn-text-color: #f4f5f6;
+$sun-color: #f39c12;
+
+$swiper-slide-border: rgba(0, 0, 0, 0.2);
+
+$card-intro-border-color: rgba(255, 255, 255, 0.4);
+$card-intro-transparent-color: rgba(255, 255, 255, 0.1);
 
 // social media icon colors
 $telegram-icon-color: #0088cc;
+$google-icon-color: #0088cc;
 $facebook-icon-color: #3b5998;
 $twitter-icon-color: #1da1f2;
 $linkedin-icon-color: #0077b5;
 $youtube-icon-color: #ff0000;
 $github-icon-color: rgb(240, 246, 252);
+$github2-icon-color: #333;
+
+body {
+  --dark-bg-color: #{$dark-bg-color};
+  --light-bg-color: #{$light-bg-color};
+  --navbar-dark: #{$navbar-dark};
+  --navbar-dark-text: #{$navbar-dark-text};
+  --dark-dropdown-bg: #{$dark-dropdown-bg};
+  --text-color: #{$text-color};
+  --text-color2: #{$text-color2};
+  --btn-accent-color: #{$btn-accent-color};
+  --btn-text-color: #{$btn-text-color};
+  --sun-color: #{$sun-color};
+
+  --swiper-slide-border: #{$swiper-slide-border};
+
+  --card-intro-border-color: #{$card-intro-border-color};
+  --card-intro-transparent-color: #{$card-intro-transparent-color};
+
+  // social media icon colors
+  --telegram-icon-color: #{$telegram-icon-color};
+  --google-icon-color: #{$google-icon-color};
+  --facebook-icon-color: #{$facebook-icon-color};
+  --twitter-icon-color: #{$twitter-icon-color};
+  --linkedin-icon-color: #{$linkedin-icon-color};
+  --youtube-icon-color: #{$youtube-icon-color};
+  --github-icon-color: #{$github-icon-color};
+  --github2-icon-color: #{$github2-icon-color};
+}
 
 // fonts
 // @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 // @import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital@0;1&display=swap");
 
-
-
-@font-face{
-  font-family: 'Open Sans'; /* Define the custom font name */
-  src:  url('../fonts/articles/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/articles/Open_Sans/OpenSans-Regular.ttf') format('truetype'); /* Define where the font can be downloaded */
+@font-face {
+  font-family: "Open Sans"; /* Define the custom font name */
+  src: url("../fonts/articles/Open_Sans/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/articles/Open_Sans/OpenSans-Regular.ttf") format("truetype"); /* Define where the font can be downloaded */
   font-style: normal;
   font-weight: normal;
   font-display: swap;
 }
 
-
-@font-face{
-  font-family: 'Proza Libre'; /* Define the custom font name */
-  src:  url('../fonts/articles/Proza_Libre/ProzaLibre-Italic.woff2') format('woff2'),
-        url('../fonts/articles/Proza_Libre/ProzaLibre-Italic.ttf') format('truetype'); /* Define where the font can be downloaded */
+@font-face {
+  font-family: "Proza Libre"; /* Define the custom font name */
+  src: url("../fonts/articles/Proza_Libre/ProzaLibre-Italic.woff2")
+      format("woff2"),
+    url("../fonts/articles/Proza_Libre/ProzaLibre-Italic.ttf")
+      format("truetype"); /* Define where the font can be downloaded */
   font-style: italic;
   font-weight: normal;
   font-display: swap;
@@ -75,7 +119,7 @@ ul li {
   list-style: none;
 }
 
-.fa-fw{
+.fa-fw {
   display: inline-block;
   width: 1.28571429em;
 }

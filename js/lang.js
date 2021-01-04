@@ -125,54 +125,76 @@ const language = {
 }
 
 
+let current_language = localStorage.getItem('currentLanguage')
 const selects = document.querySelector("#language_selector")
+
+function grab(id) {
+    return document.querySelector(`[data-lang-item='${id}']`)
+}
+
+const populate_uz = () => {
+    Object.entries(language.uz).forEach(elem => {
+        if (grab(elem[0]) != null) {
+            grab(elem[0]).textContent = elem[1]
+            // console.log(elem)
+        }
+    });
+
+}
+const populate_ja = () => {
+    Object.entries(language.ja).forEach(elem => {
+        if (grab(elem[0]) != null) {
+            grab(elem[0]).textContent = elem[1]
+            // console.log(elem)
+        }
+    });
+
+}
+const populate_en = () => {
+    Object.entries(language.en).forEach(elem => {
+        if (grab(elem[0]) != null) {
+            grab(elem[0]).textContent = elem[1]
+            // console.log(elem)
+        }
+    });
+}
+
 function language_changer() {
-    function grab(id) {
-        return document.querySelector(`[data-lang-item='${id}']`)
-    }
-
-    const populate_uz = () => {
-        Object.entries(language.uz).forEach(elem => {
-            if (grab(elem[0]) != null) {
-                grab(elem[0]).textContent = elem[1]
-                // console.log(elem)
-            }
-        });
-
-    }
-    const populate_ja = () => {
-        Object.entries(language.ja).forEach(elem => {
-            if (grab(elem[0]) != null) {
-                grab(elem[0]).textContent = elem[1]
-                // console.log(elem)
-            }
-        });
-
-    }
-    const populate_en = () => {
-        Object.entries(language.en).forEach(elem => {
-            if (grab(elem[0]) != null) {
-                grab(elem[0]).textContent = elem[1]
-                // console.log(elem)
-            }
-        });
-
-    }
-
     let value = selects.options[selects.selectedIndex].value
     console.log("Changed: ", value)
     if (value == "uz") {
+        localStorage.setItem('currentLanguage', 'uz')
         populate_uz()
     } else if (value == "ja") {
+        localStorage.setItem('currentLanguage', 'ja')
         populate_ja()
     } else {
+        localStorage.setItem('currentLanguage', 'en')
         populate_en()
     }
 }
 
+
 window.onload = () => {
-    // change the language based on the selected value
-    language_changer()
+    // change the language based on localStorage
+    switch (current_language) {
+        case 'uz':
+            populate_uz()
+            selects.value = 'uz'
+            break;
+        case 'ja':
+            selects.value = 'ja'
+            selects.options[2].checked = true
+            populate_ja()
+            break;
+        case 'en':
+            selects.value = 'en'
+            selects.options[0].checked = true
+            populate_en()
+            break;
+        default:
+            break;
+    }
 
     // see more effect in mobile view
     const see_more_btn = document.querySelector(".see-more")
@@ -185,14 +207,57 @@ window.onload = () => {
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666; }";
-
     document.body.appendChild(css);
+
+
     // add event listener to language selector for a change
+
     selects.addEventListener('change', () => {
+        current_language = localStorage.getItem('currentLanguage')
         language_changer()
-
-
     })
 
+    // settingsDropdown custom toggle
+    document.querySelector("#settingsDropdown").addEventListener('click', () => {
+        console.log("clicked")
+        const drop = document.querySelector(".dropdown-menu-custom")
+        drop.classList.toggle("show_me")
+    })
+
+
+    // theme changer dark - light modes
+    let darkMode = localStorage.getItem("darkMode")
+    // checkbox if checked - night
+    const darkModeToggle = document.querySelector("#dark_mode_toggle")
+
+    const enableDarkMode = () => {
+        // 1. add dark mode to body
+        document.body.classList.add('darkMode')
+        //2. update the darkMode in the localStorage 
+        localStorage.setItem('darkMode', 'enabled')
+    }
+
+    const disableDarkMode = () => {
+        // 1. add dark mode to body
+        document.body.classList.remove('darkMode')
+        //2. update the darkMode in the localStorage 
+        localStorage.setItem('darkMode', null)
+    }
+
+    // check if the user previously set the darkMode on
+    if (darkMode == 'enabled') {
+        enableDarkMode()
+    }
+
+    darkModeToggle.addEventListener('change', () => {
+        darkMode = localStorage.getItem("darkMode")
+        if (darkMode !== 'enabled') {
+            enableDarkMode()
+            console.log(darkMode)
+        } else {
+            console.log(darkMode)
+            disableDarkMode()
+        }
+    })
 
 }

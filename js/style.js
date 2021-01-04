@@ -40,6 +40,8 @@ const toggle_intro_text = () => {
   }
 }
 
+
+
 class TxtRotate {
   constructor(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -110,7 +112,3 @@ function stop_text_rotation() {
   rotate.stop_rotating();
 }
 
-
-// window.onload = () => {
-
-// }
