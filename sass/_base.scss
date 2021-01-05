@@ -5,13 +5,27 @@ $navbar-dark: #262626;
 $navbar-dark-text: #cacaca;
 $dark-dropdown-bg: #4f4f4f;
 $navbar-light-color: #fbfbfb;
-$navbar-light-text: rgba(0,0,0,.9);
+$navbar-light-text: rgba(0, 0, 0, 0.9);
 
 $text-color: #cacaca;
 $text-color2: black;
 $btn-accent-color: #408bff;
 $btn-text-color: #f4f5f6;
 $sun-color: #f39c12;
+
+/* 
+    color: #3d3f47;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    text-align: left;
+    list-style: none;
+    background-color: #ffffff;
+*/
 
 $swiper-slide-border: rgba(0, 0, 0, 0.2);
 
@@ -27,7 +41,17 @@ $linkedin-icon-color: #0077b5;
 $youtube-icon-color: #ff0000;
 $github-icon-color: rgb(240, 246, 252);
 $github2-icon-color: #333;
+// --dark-bg-color: white;
+// --light-bg-color: $light-primary-accent;
+// --navbar-dark: $light-card-inside;
+// --navbar-dark-text: $light-text-light;
+// --dark-dropdown-bg: $light-card-bg;
+// --text-color: $light-text-dark;
+// --text-color2: $light-text-light;
 
+// --card-intro-border-color: $light-border-color;
+// --card-intro-transparent-color: $light-border-color;
+// --github-icon-color: $github2-icon-color;
 body {
   --dark-bg-color: #{$dark-bg-color};
   --light-bg-color: #{$light-bg-color};
@@ -39,11 +63,15 @@ body {
   --btn-accent-color: #{$btn-accent-color};
   --btn-text-color: #{$btn-text-color};
   --sun-color: #{$sun-color};
-
+  --brand-color: var(--text-color);
+  --brand-color-variant: #ff5647;
+  --light-card-bg-color-dark: #f7f7f7;
   --swiper-slide-border: #{$swiper-slide-border};
-
+  --swiper-header-color: #{$text-color2};
   --card-intro-border-color: #{$card-intro-border-color};
   --card-intro-transparent-color: #{$card-intro-transparent-color};
+
+  --settings-border-color: var(--text-color);
 
   // social media icon colors
   --telegram-icon-color: #{$telegram-icon-color};
@@ -70,11 +98,18 @@ body {
 }
 
 @font-face {
+  font-family: "Open Sans"; /* Define the custom font name */
+  src: url("../fonts/articles/Open_Sans/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/articles/Open_Sans/OpenSans-Bold.ttf") format("truetype"); /* Define where the font can be downloaded */
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Proza Libre"; /* Define the custom font name */
-  src: url("../fonts/articles/Proza_Libre/ProzaLibre-Italic.woff2")
-      format("woff2"),
-    url("../fonts/articles/Proza_Libre/ProzaLibre-Italic.ttf")
-      format("truetype"); /* Define where the font can be downloaded */
+  src: url("../fonts/articles/Proza_Libre/ProzaLibre-Italic.woff2") format("woff2"),
+    url("../fonts/articles/Proza_Libre/ProzaLibre-Italic.ttf") format("truetype"); /* Define where the font can be downloaded */
   font-style: italic;
   font-weight: normal;
   font-display: swap;

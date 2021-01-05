@@ -10,7 +10,7 @@ a {
 }
 
 #logo {
-  fill: var(--text-color);
+  fill: var(--brand-color);
 }
 
 nav {
@@ -18,11 +18,17 @@ nav {
   .navbar-brand {
     max-height: 50px;
   }
-  a, .dropdown-item {
+  .navbar-toggler {
+    i {
+      color: var(--brand-color);
+    }
+  }
+  a,
+  .dropdown-item {
     color: var(--navbar-dark-text);
 
     &:hover {
-      color: inherit;
+      color: var(--brand-color);
     }
   }
   .navbar-brand svg {
@@ -43,31 +49,47 @@ nav {
     padding-left: 0.75rem;
   }
   #login-nav {
+    .dropdown {
+      display: grid;
+    }
     margin-left: 0 !important;
     label {
       margin-right: 1rem;
       background-color: inherit;
     }
     #settingsDropdown {
-      padding-left: 0;
+      @include flexCenter;
+      padding-left: 3px;
       color: var(--text-color);
       border-color: inherit;
       box-shadow: none;
+      &::after,
       i {
+        color: var(--brand-color);
         transition: transform 0.5s ease-in-out;
       }
-      &:hover,
-      &:focus {
-        background-color: inherit;
-        border-color: inherit;
-
+      &:hover {
+        &::after {
+          color: var(--brand-color-variant);
+        }
         i {
           transform: scale(1.2) rotate(360deg);
+          color: var(--brand-color-variant);
+        }
+      }
+      @include mq(800px) {
+        & {
+          justify-content: unset;
+
+          padding-left: 0;
+          &:hover i {
+            transform: rotate(360deg);
+          }
         }
       }
     }
     .dropdown-menu-custom {
-      color: #e0e0e0;
+      color: var(--text-color);
       position: absolute;
       top: 100%;
       left: -100%;
@@ -77,7 +99,7 @@ nav {
       padding: 0.5rem 0;
       text-align: left;
       list-style: none;
-      background-color: #4f4f4f;
+      background-color: var(--dark-dropdown-bg);
       background-clip: padding-box;
       border: 1px solid rgba(0, 0, 0, 0.15);
       border-radius: 0.25rem;
@@ -100,8 +122,8 @@ nav {
       display: inherit;
     }
     #language_selector {
-      color: var(--text-color);
-      border: none;
+      color: var(--brand-color);
+      background-color: var(--dark-dropdown-bg);
       box-shadow: none;
       width: fit-content;
     }
@@ -109,20 +131,18 @@ nav {
     .theme-toggle {
       .label {
         position: relative;
-        background-color: #262626;
+        background-color: var(--dark-dropdown-bg);
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border: 1px solid var(--settings-border-color);
         padding: 5px;
         border-radius: 50px;
         height: 26px;
         width: 60px;
         margin-right: 0;
 
-        .fa-moon {
-          // color: #f1c40f;
-          color: var(--light-bg-color);
-        }
+        .fa-moon,
         .fa-sun {
           color: var(--sun-color);
         }
@@ -130,10 +150,10 @@ nav {
       .ball {
         width: 22px;
         height: 22px;
-        background-color: var(--sun-color);
+        background-color: var(--brand-color);
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 1px;
+        left: 1px;
         border-radius: 50%;
         transition: transform 0.3s ease-in-out, background-color 0.3s linear;
       }
@@ -142,13 +162,18 @@ nav {
         position: absolute;
       }
       input[type="checkbox"]:checked + .label .ball {
-        transform: translateX(33px);
-        background-color: var(--light-bg-color);
+        transform: translateX(34px);
       }
     }
     a.nav_login {
       display: flex;
       align-items: center;
+
+      &:hover {
+        &::after {
+          color: var(--brand-color-variant);
+        }
+      }
     }
     a.nav_login::after {
       font-family: "Font Awesome 5 Free";
@@ -157,6 +182,7 @@ nav {
       margin-left: 5px;
       vertical-align: middle;
       font-weight: 900;
+      color: var(--brand-color);
     }
   }
 }
@@ -260,6 +286,7 @@ main {
             opacity: 0.5;
           }
           h5 {
+            color: var(--brand-color);
             font-style: italic;
           }
 
@@ -322,7 +349,9 @@ main {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
-
+      h4 {
+        color: var(--swiper-header-color);
+      }
       p {
         padding: 1rem;
       }
@@ -382,64 +411,23 @@ footer {
 }
 
 .darkMode {
-  --dark-bg-color: white;
-  --light-bg-color: #c0c0c0;
-  --navbar-dark: $navbar-light-color;
-  --navbar-dark-text: $navbar-light-text;
+  --dark-bg-color: #cae5e3;
+  --light-bg-color: #f7f7f7;
+  --navbar-dark: #fbfbfb;
+  --navbar-dark-text: rgba(0, 0, 0, 0.9);
   --dark-dropdown-bg: #ffffff;
-  --text-color: $navbar-light-text;
-  --text-color2: white;
-  // --btn-accent-color: #408bff;
-  // --btn-text-color: #f4f5f6;
-  // --sun-color: #f39c12;
-
-  // --swiper-slide-border: rgba(0, 0, 0, 0.2);
-
-  --card-intro-border-color: rgba(0, 0, 0, 0.9);
-  --card-intro-transparent-color: rgba(0, 0, 0, 0.1);
-  --github-icon-color: $github2-icon-color;
+  --text-color: #3d3f47;
+  --text-color2: #9f9f9f;
+  --brand-color: #12b07b;
+  --card-intro-border-color: #cae5e3;
+  --card-intro-transparent-color: #f7f7f7;
+  --github-icon-color: #333;
+  --brand-color-variant: #ff5647;
+  --swiper-header-color: var(--brand-color);
+  --swiper-theme-color: var(--brand-color);
+  --light-card-bg-color-dark: #f7f7f7;
+  --settings-border-color: var(--text-color2);
+  .dropdown-menu-custom {
+    background-color: var(--light-card-bg-color-dark);
+  }
 }
-
-// @media (prefers-color-scheme: light) {
-//   body {
-//     background-color: var(--light-bg-color);
-//     color: var(--text-color2);
-
-//     h1,
-//     h2,
-//     h3,
-//     h4,
-//     h5,
-//     p,
-//     label {
-//       color: var(--text-color2);
-//     }
-
-//     .nav-item a {
-//       color: var(--light-bg-color);
-//     }
-//     #logo {
-//       fill: var(--light-bg-color);
-//     }
-//     .card-body:hover a {
-//       color: var(--text-color2 !important);
-//     }
-//     .modal-content {
-//       background: var(--light-bg-color !important);
-//       background-blend-mode: multiply, multiply !important;
-//       color: var(--text-color2 !important);
-//       label.form-label {
-//         color: var(--btn-accent-color);
-//       }
-//       .btn-sign-in {
-//         background: var(--btn-accent-color);
-//         color: var(--btn-text-color);
-//       }
-//     }
-
-//     .swiper-slide {
-//       background: var(--light-bg-color !important);
-//       border: 1px solid var(--swiper-slide-border);
-//     }
-//   }
-// }
