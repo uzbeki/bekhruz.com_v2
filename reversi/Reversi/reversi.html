@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversi Game</title>
+    <meta name="description" content="Reversi (Othello) game. Two player version. Simple. No ads, no fuss. Enjoy!">
+    <meta name="keywords" content="game, reversi, othello, javascript game, free, no ads">
+    <meta name="author" content="Bekhruz Otaev">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../font_awesome/webfonts/all.min.css" />
+    <script defer src="game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="status">
+
+            <div id="black_score" class="score">
+                <span>2</span>
+                <p>BLACK</p>
+            </div>
+            <div class="input">
+                <input type="checkbox" id="switch" disabled /><label for="switch">Toggle</label>
+            </div>
+
+            <div id="white_score" class="score">
+                <p>WHITE</p><span>2</span>
+            </div>
+
+
+        </div>
+        <div class="game-container">
+            <table name="game-table" id="game-table">
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <!-- </tr> -->
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="white">
+                        <p class="white"></p>
+                    </td>
+                    <td class="black">
+                        <p class="black"></p>
+                    </td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="black">
+                        <p class="black"></p>
+                    </td>
+                    <td class="white">
+                        <p class="white"></p>
+                    </td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="buttons-container">
+            <button id="start_btn" onclick="start()"><i class="fa fa-play" value="start"> start</i></button>
+            <button id="reset_btn" onclick="location.reload(); return false;" type="reset"><i class="fa fa-refresh"
+                    aria-hidden="true"></i> reset</button>
+            <button id="show_moves" onclick="show_moves()"><i class="fa fa-eye-slash" value="start"></i> hint</button>
+        </div>
+
+    </div>
+    <canvas class="background"></canvas>
+    <div class="modal" style="display: block;">
+        <div class="modal-content">
+            <button id="clear-modal">x</button>
+            <div class="scores">
+                <p>black: <span id="black-score">2</span></p>
+                <p>white: <span id="white-score">2</span></p>
+            </div>
+            <div class="message">
+                <h2 id="winner">BLACK</h2>
+                <p>won!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+        window.
+            onload
+            = function () {
+                Particles.
+                    init
+                    ({
+                        selector: '.background',
+                        minDistance: 150,
+                        connectParticles: true,
+                        color: '#C1C1C1',
+                        speed: 0.3,
+                        sizeVariations: 2
+
+
+
+                    });
+            };
+    </script>
+</body>
+
+</html>
