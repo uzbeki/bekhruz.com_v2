@@ -216,13 +216,14 @@ window.onload = () => {
         current_language = localStorage.getItem('currentLanguage')
         language_changer()
     })
-
-    // settingsDropdown custom toggle
-    document.querySelector("#settingsDropdown").addEventListener('click', () => {
-        console.log("clicked")
+    const settingsDropdownHandler = () => {
         const drop = document.querySelector(".dropdown-menu-custom")
         drop.classList.toggle("show_me")
-    })
+    }
+    // settingsDropdown custom toggle
+    document.querySelector("#settingsDropdown").addEventListener('click', settingsDropdownHandler)
+    document.querySelector(".dropdown-menu-custom").addEventListener('mouseleave', settingsDropdownHandler)
+    
 
 
     // theme changer dark - light modes

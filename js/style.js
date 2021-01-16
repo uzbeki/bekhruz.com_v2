@@ -15,10 +15,18 @@ const swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
   },
+  mousewheel: {
+    invert: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  loop: true,
 });
 
 
-particlesJS.load('particles-js', 'particles/particles_snow.json', function () {
+particlesJS.load('particles-js', 'particles/particles.json', function () {
   console.log('particles started moving');
 });
 
@@ -111,4 +119,5 @@ function stop_text_rotation() {
   console.log("text rotation stopped")
   rotate.stop_rotating();
 }
+
 
