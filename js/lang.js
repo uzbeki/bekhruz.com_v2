@@ -223,7 +223,11 @@ window.onload = () => {
     // settingsDropdown custom toggle
     document.querySelector("#settingsDropdown").addEventListener('click', settingsDropdownHandler)
     document.querySelector(".dropdown-menu-custom").addEventListener('mouseleave', settingsDropdownHandler)
-    
+    document.querySelector("main").addEventListener('click', () => {
+        document.querySelector(".dropdown-menu-custom").classList.remove("show_me");
+        document.querySelector('.navbar-collapse.collapse').classList.remove('show')
+    })
+
 
 
     // theme changer dark - light modes
