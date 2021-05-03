@@ -55,7 +55,7 @@ class TxtRotate {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 50) || 2000;
+    this.period = parseInt(period) || 3000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
