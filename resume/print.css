@@ -1,0 +1,10 @@
+/* custom variables */
+:root {
+    font-size: 14px;
+}
+#top-left::after {
+    width: 2.3rem;
+    right: -4.2%;
+    bottom: -9%;
+    height: 2.3rem;
+}

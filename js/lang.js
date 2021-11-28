@@ -1,6 +1,6 @@
 const language = {
     uz: {
-        nav_projects: "Proyektlar",
+        nav_projects: "Rezyume",
         nav_reversi: "Reversi",
         nav_covid19: "Covid-19",
         nav_action1: "Davlatlar bo'yicha",
@@ -41,7 +41,7 @@ const language = {
 
     },
     en: {
-        nav_projects: "Projects",
+        nav_projects: "Resume",
         nav_reversi: "Reversi",
         nav_covid19: "Covid-19",
         nav_action1: "Action",
@@ -82,7 +82,7 @@ const language = {
 
     },
     ja: {
-        nav_projects: "プロジェクト",
+        nav_projects: "学歴",
         nav_reversi: "オセロ",
         nav_covid19: "コロナ情報",
         nav_action1: "Action",
@@ -105,21 +105,21 @@ const language = {
 
 
         data_rotate: ["ソフトウェア　エンジニア", "旅行者", "フロントエンジニア", "バックエンドエンジニア", "言語学習者"],
-        intro_p1: "Growing up in the outskirts of Bukhara,I have spent my childhood years with full of curiosity towards science and nature. I used to take apart old electronics and pondered to make sense of how they would work.",
-        intro_p2: "Then, in my teenage years, I started learning English and with that came my whole new perspective of the world. The more I learned about other cultures, the more I wanted to go out into the world and see it for myself. Here I am, after a few years, working abroad in Japan. The rest is history.",
+        intro_p1: "ブハラ郊外で育った私は、子供時代を科学と自然への好奇心に満ちて過ごしてきました。 私は古い電子機器を分解し、それらがどのように機能するかを理解するために熟考していました。",
+        intro_p2: "それから、10代の頃、私は英語を学び始めました。それによって、まったく新しい世界観が生まれました。 他の文化について学べば学ぶほど、世界に出て自分の目で確かめたいと思いました。 ここで私は数年後、日本で海外で働いています。 残りは歴史です。",
         intro_see_more: "もっと見る",
         intro_see_less: "小さくする",
 
 
 
-        swiper_js: "I have been using JavaScript in most of my projects. The ones you can directly see are Covid-19 data analyzer, Reversi game and the page you are looking at has some JS involved. Check out the source codes in my Github profile.",
-        swiper_html5: "HTML5 was my introduction to programming. It is a new version of the language HTML, with new elements, attributes, and behaviors that allows more diverse and powerful Websites and applications. Please refer to the inspection window to look at how I code in HTML.",
-        swiper_css: "I would be no developer if I did not know CSS. It is what styles all of the web. Besides plain css, I also use preprocessors like Sass, CSS powered frameworks like Bootstrap and Tailwind CSS in my projects. Curious to find out how this page's design came to be?",
-        swiper_django: "Django was my very first step towards full-stack development. It is at the core of my personal website and projects that involve databases and REST APIs. Django's model architecture makes it easier for me to work with different databases. Plus, I can scale anything up in no time with Django.",
-        swiper_python: "Python - the language on the hype, yet it is what really pushed me into determining my career. I have created news aggregators, web-scrapers, user authentication systems, websites, automated my workflow with Python. Given the adequate time, I can do almost anything - any thing with Python.",
-        swiper_aws: "Amazon's Web Services are really making a lot of our lives easier. I am a customer, myself, deploying my projects, using AWS databases, storing my files and so on to the cloud. If you are thinking of scaling your business to the next level, AWS is a way to go, and I am happy to help!",
-        swiper_c: "C is the father of programming languages, some say. I first got to work with it in my first job. I created command line games, binary file analyzers and back-end systems with it. It is super fast. In case you're into embedded systems development and you need a hand, let me know.",
-        swiper_kotlin: "Yes, I can also create mobile applications using Kotlin in Android Studio. Although I am new to mobile app development, creating an app of any complexity is one search away, if you know what I mean. I have created calculators, educational testing apps and a music player.",
+        swiper_js: "私はほとんどのプロジェクトでJavaScriptを使用しています。 直接見ることができるのはCovid-19データアナライザー、リバーシゲームであり、あなたが見ているページにはいくつかのJSが関係しています。 Githubプロファイルのソースコードを確認してください。",
+        swiper_html5: "HTML5は私のプログラミング入門でした。 これは、言語HTMLの新しいバージョンであり、新しい要素、属性、および動作を備えており、より多様で強力なWebサイトおよびアプリケーションを可能にします。 HTMLでのコーディング方法については、検査ウィンドウを参照してください。",
+        swiper_css: "CSSを知らなければ、私は開発者ではありません。 それがすべてのウェブのスタイルです。 プレーンなcssの他に、Sassのようなプリプロセッサ、BootstrapやTailwindCSSのようなCSSを利用したフレームワークもプロジェクトで使用しています。 このページのデザインがどのようになったか知りたいですか？",
+        swiper_django: "Djangoは、フルスタック開発に向けた私の最初のステップでした。 これは、データベースとRESTAPIを含む私の個人的なWebサイトとプロジェクトの中核です。 Djangoのモデルアーキテクチャにより、さまざまなデータベースでの作業が簡単になります。 さらに、Djangoを使用すると、すぐに何でもスケールアップできます。",
+        swiper_python: "Python-誇大広告の言語ですが、それが私のキャリアを決定することに本当に私を駆り立てたものです。 ニュースアグリゲーター、ウェブスクレイパー、ユーザー認証システム、ウェブサイトを作成し、Pythonでワークフローを自動化しました。 十分な時間があれば、私はほとんど何でもできます-Pythonで何でもできます。",
+        swiper_aws: "アマゾンのウェブサービスは本当に私たちの生活の多くを楽にしてくれます。 私は顧客であり、プロジェクトのデプロイ、AWSデータベースの使用、ファイルの保存などをクラウドに行っています。 ビジネスを次のレベルに拡大することを検討している場合は、AWSが最適な方法であり、喜んでお手伝いします。",
+        swiper_c: "Cはプログラミング言語の父であると言う人もいます。 私は最初の仕事で最初にそれを扱うようになりました。 コマンドラインゲーム、バイナリファイルアナライザー、バックエンドシステムを作成しました。 超高速です。 組み込みシステムの開発に興味があり、手を必要とする場合は、私に知らせてください。",
+        swiper_kotlin: "はい、AndroidStudioでKotlinを使用してモバイルアプリケーションを作成することもできます。 私はモバイルアプリの開発に不慣れですが、私の言いたいことを知っていれば、どんな複雑なアプリでも1回の検索で作成できます。 電卓、教育試験アプリ、音楽プレーヤーを作成しました。",
 
     }
 }
@@ -134,8 +134,15 @@ function grab(id) {
 
 const populate_uz = () => {
     Object.entries(language.uz).forEach(elem => {
-        if (grab(elem[0]) != null) {
-            grab(elem[0]).textContent = elem[1]
+        // if (grab(elem[0]) !== null) {
+        //     grab(elem[0]).textContent = elem[1]
+        //     // console.log(elem)
+        // }
+        // console.log(elem[0])
+        const el = grab(elem[0])
+        console.log(el)
+        if (el) {
+            el.textContent = elem[1]
             // console.log(elem)
         }
     });
@@ -143,8 +150,10 @@ const populate_uz = () => {
 }
 const populate_ja = () => {
     Object.entries(language.ja).forEach(elem => {
-        if (grab(elem[0]) != null) {
-            grab(elem[0]).textContent = elem[1]
+        const el = grab(elem[0])
+        console.log(el)
+        if (el) {
+            el.textContent = elem[1]
             // console.log(elem)
         }
     });
@@ -172,6 +181,7 @@ function language_changer() {
         localStorage.setItem('currentLanguage', 'en')
         populate_en()
     }
+    window.location.reload()
 }
 
 
@@ -265,4 +275,5 @@ window.onload = () => {
         }
     })
 
+    let current_swiper = swiper()
 }

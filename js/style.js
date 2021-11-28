@@ -1,5 +1,5 @@
 let rotate = "";
-const swiper = new Swiper('.swiper-container', {
+const swiper = () => new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
   initialSlide: 2,

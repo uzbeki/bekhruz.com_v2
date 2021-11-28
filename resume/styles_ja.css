@@ -1,0 +1,271 @@
+/* css reset */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+img,
+strong,
+i,
+ol,
+ul,
+li,
+header,
+section,
+time
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Noto Serif JP', sans-serif;
+    vertical-align: baseline;
+    color: var(--text-darker);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* custom variables */
+:root {
+    --yellow: #F3B943;
+    --light-grey: #EBEBEB;
+    --dark-grey: #1D3344;
+    --text-darker: #1D3344;
+    --text-lighter: #838383;
+    --tag-bg: #336699;
+    --border-radius: 8px;
+    --linkedin-color: #0a66c2;
+    --space-big: 1rem;
+    --font-small: 0.9rem;
+}
+:root[lang='ja']{
+    font-size: 15px;
+    font-family: 'Noto Serif JP', serif !important;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 21% 79%;
+    padding: var(--space-big);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+:root[lang='ja'] main{
+    grid-template-rows: 24% 76%;
+}
+#top-left {
+    display: flex;
+    gap: var(--space-big);
+    align-items: center;
+    background-color: var(--light-grey);
+    padding: var(--space-big);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    position: relative;
+}
+
+#top-left .avatar {}
+
+#top-left .avatar img {
+    width: 10rem;
+    height: 10rem;
+    /* border-radius: calc(var(--border-radius) * 2); */
+    /* border: 3px solid var(--yellow); */
+    object-fit: contain;
+    
+}
+
+#top-left h1 {
+    font-size: 2rem;
+}
+
+#top-left h2 {
+    color: var(--yellow);
+    font-weight: normal;
+}
+
+#top-left p {
+    font-size: var(--font-small);
+}
+#top-left::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    border: 6px solid white;
+    right: -3.5%;
+    bottom: -8%;
+    z-index: 1;
+}
+
+
+#top-right {
+    background-color: var(--dark-grey);
+    border-top-right-radius: var(--border-radius);
+    padding: var(--space-big);
+}
+
+#top-right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    font-size: var(--font-small);
+}
+
+#top-right ul li {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+#top-right ul li a {
+    color: var(--light-grey);
+}
+#top-right i {
+    color: var(--yellow);
+}
+
+#bottom-left {
+    padding: var(--space-big);
+    display: grid;
+    gap: 2rem;
+}
+
+#bottom-left .skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom-left .skills ul {
+    display: grid;
+    gap: .5rem;
+}
+#bottom-left .skills .flex {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+#bottom-left .content {
+    display: grid;
+    gap: var(--space-big);
+}
+.duration {
+    font-size: var(--font-small);
+    /* font-style: italic; */
+    /* color: var(--yellow); */
+}
+#bottom-left .content h5{
+    /* font-style: italic; */
+    color: var(--yellow);
+}
+#bottom-left ul,
+.projects ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+#bottom-left ul li{
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+#bottom-left ul li i{
+    color: var(--yellow);
+}
+#bottom-left ul li p{
+    display: inline;
+}
+.experience {
+    display: grid;
+    gap: .5rem;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.flex h4 {
+    width: 8rem;
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: var(--space-big);
+}
+.fa-external-link-alt{
+    margin: 0 .2rem;
+    color: var(--yellow);
+}
+
+
+
+
+#bottom-right {
+    background-color: var(--light-grey);
+    padding: var(--space-big);
+    display: grid;
+    gap: var(--space-big);
+}
+
+#bottom-right .badges ul li {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+#bottom-right ul li svg {
+    color: var(--linkedin-color);
+}
+
+#bottom-right .languages ul {
+    display: grid;
+    gap: 0.5rem;
+}
+#bottom-right .languages ul li{
+    display: flex;
+    align-items: center;
+}
+#bottom-right .languages ul li p{
+    width: 5rem;
+}
+#bottom-right .languages ul li i{
+    color: var(--yellow);
+}
+
+p {
+    font-size: var(--font-small);
+}
