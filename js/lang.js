@@ -276,4 +276,13 @@ window.onload = () => {
     })
 
     let current_swiper = swiper()
+
 }
+const play = () => {
+    const audio = document.querySelector("audio")
+    audio.volume = 0.3
+    audio.play()
+}
+
+
+document.addEventListener('click', play, {once: true});

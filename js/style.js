@@ -26,6 +26,7 @@ const swiper = () => new Swiper('.swiper-container', {
 });
 
 
+// particlesJS.load('particles-js', 'particles/particles.json', function () {
 particlesJS.load('particles-js', 'particles/particles_snow.json', function () {
   console.log('particles started moving');
 });
