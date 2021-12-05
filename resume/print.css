@@ -8,3 +8,8 @@
     bottom: -9%;
     height: 2.3rem;
 }
+
+/* dont display floating buttons */
+.floating_actions{
+    display: none;
+}

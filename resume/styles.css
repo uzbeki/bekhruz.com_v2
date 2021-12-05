@@ -20,8 +20,7 @@ ul,
 li,
 header,
 section,
-time
-{
+time {
     margin: 0;
     padding: 0;
     border: 0;
@@ -49,16 +48,17 @@ a {
 :root {
     --yellow: #F3B943;
     --light-grey: #EBEBEB;
-    --dark-grey: #1D3344;
+    --dark-grey: rgb(29, 51, 68);
     --text-darker: #1D3344;
     --text-lighter: #838383;
     --tag-bg: #336699;
     --border-radius: 8px;
-    --linkedin-color: #0a66c2;
+    --linkedin-color: rgb(10, 102, 194);
     --space-big: 1rem;
     --font-small: 0.9rem;
 }
-:root[lang='ja']{
+
+:root[lang='ja'] {
     font-size: 15px;
     font-family: 'Noto Serif JP', serif !important;
 }
@@ -77,9 +77,10 @@ main {
     margin: 0 auto;
 }
 
-:root[lang='ja'] main{
+:root[lang='ja'] main {
     grid-template-rows: 24% 76%;
 }
+
 #top-left {
     display: flex;
     gap: var(--space-big);
@@ -98,7 +99,7 @@ main {
     /* border-radius: calc(var(--border-radius) * 2); */
     /* border: 3px solid var(--yellow); */
     object-fit: contain;
-    
+
 }
 
 #top-left h1 {
@@ -142,6 +143,7 @@ main {
 #top-right ul li a {
     color: var(--light-grey);
 }
+
 #top-right ul li {
     display: flex;
     gap: 0.8rem;
@@ -167,6 +169,7 @@ main {
     display: grid;
     gap: .5rem;
 }
+
 #bottom-left .skills .flex {
     display: flex;
     gap: 0.5rem;
@@ -177,42 +180,51 @@ main {
     display: grid;
     gap: var(--space-big);
 }
+
 .duration {
     font-size: var(--font-small);
     font-style: italic;
     /* color: var(--yellow); */
 }
-#bottom-left .content h5{
+
+#bottom-left .content h5 {
     font-style: italic;
     color: var(--yellow);
 }
+
 #bottom-left ul,
 .projects ul {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    
+
 }
-#bottom-left ul li{
+
+#bottom-left ul li {
     display: flex;
     gap: 0.5rem;
     align-items: baseline;
 }
-#bottom-left ul li i{
+
+#bottom-left ul li i {
     color: var(--yellow);
 }
-#bottom-left ul li p{
+
+#bottom-left ul li p {
     display: inline;
 }
+
 .experience {
     display: grid;
     gap: .5rem;
 }
-.flex-between{
+
+.flex-between {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
+
 .flex h4 {
     width: 8rem;
     flex-shrink: 0;
@@ -224,7 +236,8 @@ header {
     align-items: center;
     margin-bottom: var(--space-big);
 }
-.fa-external-link-alt{
+
+.fa-external-link-alt {
     margin: 0 .2rem;
     color: var(--yellow);
 }
@@ -253,17 +266,83 @@ header {
     display: grid;
     gap: 0.5rem;
 }
-#bottom-right .languages ul li{
+
+#bottom-right .languages ul li {
     display: flex;
     align-items: center;
 }
-#bottom-right .languages ul li p{
+
+#bottom-right .languages ul li p {
     width: 5rem;
 }
-#bottom-right .languages ul li i{
+
+#bottom-right .languages ul li i {
     color: var(--yellow);
 }
 
 p {
     font-size: var(--font-small);
+}
+
+
+.floating_actions {
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.floating_actions .actions_btn {
+    box-sizing: content-box;
+    color: var(--dark-grey);
+    background-color: #fafafd;
+    border: 0.125rem solid transparent;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    outline: 0 solid;
+    transition: all .4s ease-out;
+    box-shadow: 0 0.25em 0.25em rgb(0 0 0 / 30%);
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 400ms;
+}
+
+.floating_actions .actions_btn i {
+    color: inherit;
+}
+
+.floating_actions .actions_btn:hover,
+.floating_actions .actions_btn:active {
+    background-color: #fff;
+    color: var(--linkedin-color);
+    border-color: var(--linkedin-color);
+    transform: scale(1.2);
+    box-shadow: 0 0.5em 0.5em rgb(0 0 0 / 40%);
+}
+
+span.ripple {
+    /* injected by JS */
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: rgba(29, 51, 68, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
 }
