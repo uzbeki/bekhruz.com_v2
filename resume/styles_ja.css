@@ -72,7 +72,7 @@ main {
     grid-template-rows: 21% 79%;
     padding: var(--space-big);
     gap: 10px;
-    min-width: 900px;
+    width: 900px;
     margin: 0 auto;
 }
 
