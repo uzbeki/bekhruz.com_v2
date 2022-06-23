@@ -212,6 +212,7 @@ const start = () => {
     possible_moves();
     document.querySelector("#start_btn").remove();
     document.querySelector("#reset_btn").style.display = "inline-block";
+    show_moves();
 };
 
 window.onload = () => start();

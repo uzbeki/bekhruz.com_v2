@@ -26,6 +26,11 @@ body {
   align-items: center;
 }
 
+.status .input,
+.status label {
+  cursor: auto;
+}
+
 .status {
   display: flex;
   flex-wrap: nowrap;
@@ -47,8 +52,9 @@ body {
   margin: 0 0.9rem;
   vertical-align: middle;
 }
-.score span{
-    font-size: 1.7rem;
+
+.score span {
+  font-size: 1.7rem;
 }
 
 .status #white_score {
@@ -165,6 +171,7 @@ p.ok.show_moves {
   animation: pulse 3s infinite;
   border: 1px solid #797474b3;
 }
+
 .buttons-container {
   margin: 1rem;
 }
@@ -272,6 +279,14 @@ button#clear-modal:hover {
   transition: 0.2s;
 }
 
+button {
+  transition: all 100ms ease-in-out;
+}
+
+button:active {
+  transform: scale(.9);
+}
+
 .scores {
   display: flex;
   justify-content: center;
@@ -296,10 +311,12 @@ button#clear-modal:hover {
     transform: scale(0.85);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
   }
+
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
   }
+
   100% {
     transform: scale(0.85);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -311,12 +328,15 @@ button#clear-modal:hover {
     max-width: 320px;
     max-height: 320px;
   }
+
   table {
     border-spacing: 1px;
   }
+
   .modal-content {
     width: 18rem;
   }
+
   .modal-content div {
     margin: 0;
   }
