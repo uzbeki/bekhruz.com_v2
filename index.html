@@ -1,538 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Bekhruz.com</title>
-  <meta name="author" content="Bekhruz Otaev">
-  <meta name="description"
-    content="Hey, I am Bekhruz. Join me in my programming journey. It will be full of new knowledge and wonder.">
-  <meta property="og:url" content="http://bekhruz.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:author" content="Bekhruz Otaev" />
-  <meta property="og:author-img" content="http://bekhruz.com/img/m2.png" />
-  <meta property="og:title" content="Bekhruz.com" />
-  <meta property="og:description"
-    content="Hey, I am Bekhruz. Join me in my programming journey. It will be full of new knowledge and wonder." />
-  <meta property="og:image" content="http://bekhruz.com/img/m2.png" />
-  <meta name="color-scheme" content="dark light">
-  <link rel="icon" href="bekhruzcom.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" /> -->
-  <link rel="stylesheet" href="font_awesome/webfonts/all.min.css" />
-  <!-- MDB -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
-  <link rel="stylesheet" href="compiled/css/style.min.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Bekhruz.com</title>
+        <meta name="author" content="Bekhruz Otaev">
+        <meta name="description"
+            content="Hey, I am Bekhruz. Join me in my programming journey. It will be full of new knowledge and wonder.">
+        <meta property="og:url" content="http://bekhruz.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:author" content="Bekhruz Otaev" />
+        <meta property="og:author-img" content="http://bekhruz.com/img/m2.png" />
+        <meta property="og:title" content="Bekhruz.com" />
+        <meta property="og:description"
+            content="Hey, I am Bekhruz. Join me in my programming journey. It will be full of new knowledge and wonder." />
+        <meta property="og:image" content="http://bekhruz.com/img/m2.png" />
+        <meta name="color-scheme" content="dark light">
+        <link rel="icon" href="bekhruzcom.ico" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" /> -->
+        <link rel="stylesheet" href="font_awesome/css/all.min.css" />
+        <link rel="stylesheet" href="font_awesome/css/fontawesome.min.css" />
+        <!-- MDB -->
+        <link rel="stylesheet" href="css/mdb.min.css" />
+        <link rel="stylesheet" href="compiled/css/style.min.css" />
 
-  <!-- js -->
-  <script type="text/javascript" src="js/mdb.min.js" defer></script>
-  <script src="js/animation.js" defer></script>
-  <script src="js/anim_cust.js" defer></script>
-  <!-- Custom scripts -->
+        <!-- js -->
+        <script type="text/javascript" src="js/mdb.min.js" defer></script>
+        <script src="js/animation.js" defer></script>
+        <script src="js/anim_cust.js" defer></script>
+        <!-- Custom scripts -->
+        <script src="js/swiper/swiper-bundle.min.js" defer></script>
 
-  <script type="text/javascript" src="js/style.js" defer></script>
-  <script src="particles/particles.js/particles.js"></script>
+        <script type="text/javascript" src="js/style.js" defer></script>
+        <script src="particles/particles.js/particles.js"></script>
+        <!-- post-scripts -->
+        <script src="js/lang.js" defer></script>
 
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" type="text/css" href="js/swiper/swiper-bundle.min.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168428583-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-168428583-1');
-  </script>
-</head>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" type="text/css" href="js/swiper/swiper-bundle.min.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168428583-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<body>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-168428583-1');
+    </script> -->
+    </head>
 
-  <!-- Navigation start-->
-  <nav class="navbar navbar-expand-lg">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand" href="https://bekhruz.com">
-        <svg loading="lazy" height="68.91px" width="270.92px">
-          <g id="logo">
-            <g id="logo_main">
-              <path
-                d="M6.5,81.4Q1.1,78.6.2,73.6a8,8,0,0,1,2-7.4,13.1,13.1,0,0,1,6.7-3.9,12.7,12.7,0,0,1,6.7-.1,1.6,1.6,0,0,1,1.1,1.4,5.4,5.4,0,0,1-.1,2.2l-.2,1a19.4,19.4,0,0,0-9.5.7c-2.7.9-3.9,2.6-3.8,5S4.8,77,8,78.9a32.5,32.5,0,0,0,12.2,3.7Q31,84,38.5,80.5c5-2.2,7.7-5.3,8.2-9.3a7.6,7.6,0,0,0-3.6-7.5A16,16,0,0,0,33,61.4l-3,.3c-.7-1.4-.4-2.1.9-2.2a12.9,12.9,0,0,0,7.9-3.6,10.1,10.1,0,0,0,3.3-7.7c.1-3.2-.8-5.5-2.9-7s-5.5-2-10.3-1.7c-6.9.5-11.8,2.3-14.8,5.4s-2,3.1-1.3,4.2.1.2.2.3,0,.3-.4.6a5.4,5.4,0,0,1-4.5.1,3.5,3.5,0,0,1-.9-.7c-1.1-1.1-1-2.7.3-4.7s6.7-6,13.6-7.4a57.7,57.7,0,0,1,8.7-1c6.9-.4,12.3.4,16.1,2.2s5.7,4.7,5.5,8.8-3.7,9.1-10.1,11.9c9.9.1,14.8,3.4,14.6,9.7,0,3.5-1.7,6.6-4.9,9.3S43.3,82.8,37.7,84a59.4,59.4,0,0,1-18.6.9A32.5,32.5,0,0,1,6.5,81.4Zm22.2-20-1.5,7.2c-.3,1.4-.6,3-.8,4.6a41.2,41.2,0,0,0-.3,4.8v1.7a7.5,7.5,0,0,0,.2,1.1v.3a5.2,5.2,0,0,1-3.6.3c-1.5-.3-2.4-1-2.6-2a5.7,5.7,0,0,1-.3-1.8c0-.6,0-1.6.1-2.9s.3-2.9.5-4.5.3-4.1.6-7.6.5-7.2.7-11.3a57.4,57.4,0,0,0,0-8.3l.6-.2,1.6-.5,2.1-.5a7.7,7.7,0,0,1,2.1.1,3.8,3.8,0,0,1,1.7.6,5,5,0,0,1,1.4,3.3,24,24,0,0,1-.6,6C30,54.9,29.4,58.1,28.7,61.4Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M70,65.2a12.7,12.7,0,0,1-5.5,1.3,6.2,6.2,0,0,0,2.2,3.4,5.2,5.2,0,0,0,3.2,1.3,7.9,7.9,0,0,0,4.5-1.1,5.8,5.8,0,0,0,2.8-3c0-.2.1-.2.4.1a2,2,0,0,1,0,2.1c-.6,1.4-2.1,2.7-4.3,3.8a13.5,13.5,0,0,1-7.2,1.4,11.7,11.7,0,0,1-6.8-2.7,7.6,7.6,0,0,1-2.4-6.6,13.2,13.2,0,0,1,1.6-5.1,10.7,10.7,0,0,1,3.1-3.5,12.7,12.7,0,0,1,3.8-2,11,11,0,0,1,3.8-.7,5.5,5.5,0,0,1,2.8.6,4.3,4.3,0,0,1,2.2,3.4,6.3,6.3,0,0,1-.8,4.4A7.7,7.7,0,0,1,70,65.2Zm-5.7-.4c2.4-1.3,3.7-3.9,4-7.8,0-.9,0-1.4-.3-1.6s-.5,0-1,.6a15.2,15.2,0,0,0-2.6,7.9A2.2,2.2,0,0,0,64.3,64.8Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M83.1,61.1a15.2,15.2,0,0,1,3.3-4.7,11.5,11.5,0,0,1,3.9-2.7,7.6,7.6,0,0,1,3.6-.4,3.5,3.5,0,0,1,2.5,1.5,6.9,6.9,0,0,1,1,3.6,7.8,7.8,0,0,1-1.3,4.3,9.7,9.7,0,0,1-3.8,3.7c-.5.2-.3.7.4,1.5a10.9,10.9,0,0,0,3.7,2.6,2.3,2.3,0,0,0,2.4-.7,6.2,6.2,0,0,0,1.7-2.7c0-.2.2-.1.5.2a2,2,0,0,1-.1,2,11.7,11.7,0,0,1-3.6,4.4,5.4,5.4,0,0,1-4.7,1.2,13.1,13.1,0,0,1-4.4-3c-1.7-1.6-2.9-2.9-3.8-3.9s-.6-1.7.2-2.1a14.1,14.1,0,0,0,3.8-3.3A3.6,3.6,0,0,0,89.5,60a5.3,5.3,0,0,0-.5-1.8c-.8-.9-1.8-.4-3.2,1.4s-3.1,6.1-3.6,10.8v3.2a6.2,6.2,0,0,1-4.4.5q-2.7-.6-3-2.4t.9-11.1q1.2-8.7,1.5-12.9a56.5,56.5,0,0,0-.1-8.3l.6-.3,1.4-.5,2-.4a6.7,6.7,0,0,1,2,0,4.4,4.4,0,0,1,1.7.7,5.6,5.6,0,0,1,1.4,3.3,21.4,21.4,0,0,1-.7,6Q83.3,60.1,83.1,61.1Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M106.3,61.9a14,14,0,0,1,5.3-5.7,7.7,7.7,0,0,1,5.9-1,2.4,2.4,0,0,1,1.6,2.4,22.6,22.6,0,0,1-.7,5.1l-.2,1.2-.6,3.1a16.5,16.5,0,0,0-.2,2.1,3,3,0,0,0,.2,1.5c.1.3.3.4.6.5s1.4,0,2.2-.9a9.2,9.2,0,0,0,1.7-3.1c0-.2.2-.1.5.2s.3,1.1-.2,2a9,9,0,0,1-3.9,4.1,6.6,6.6,0,0,1-5.3.9q-3.7-1-2.7-9a18.9,18.9,0,0,1,.9-3.4,19.3,19.3,0,0,1,.6-2,1.3,1.3,0,0,0-.2-.8q-.7-.5-2.1.6a11,11,0,0,0-2.5,4,24.5,24.5,0,0,0-1.7,6.6,12.7,12.7,0,0,0,.1,2v1.3a6.5,6.5,0,0,1-4.5.5c-1.8-.4-2.8-1.2-2.9-2.4s.1-5.4.9-11.1,1.3-10.1,1.4-12.9a57.4,57.4,0,0,0,0-8.3l.6-.3,1.4-.5,2-.4a6,6,0,0,1,1.9,0,3.4,3.4,0,0,1,1.7.7,5,5,0,0,1,1.4,3.3,24.9,24.9,0,0,1-.6,6C107.6,54.3,106.7,58.9,106.3,61.9Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M124.3,58.3a3.9,3.9,0,0,1-3-2.3,2.7,2.7,0,0,1,.4-3c1-1.7,2.3-2.6,4-2.5s2.4,1.1,2.2,3.3a7.6,7.6,0,0,1-.1,1.4H131l2.5-.3h1.6a1.6,1.6,0,0,1,1.1.4q.6.9-1.2,8.7c-.9,4.4-.8,6.8.5,7.2s1.6,0,2.5-.9a9,9,0,0,0,1.8-3.1c0-.2.2-.2.5.1a2,2,0,0,1,0,2.1,9.5,9.5,0,0,1-4.3,4.1q-3.1,1.6-5.4.9c-2.8-.8-3.9-3.8-3.1-9l1.2-6.7H127a39.5,39.5,0,0,1-4.6,11c-.7,1.2-1.3,1.4-1.7.8a.8.8,0,0,1-.1-.3C122.4,67.5,123.6,63.5,124.3,58.3Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M151.9,56.8a5.2,5.2,0,0,1,7,.1,31.7,31.7,0,0,0-1.1,7c-.4,4.6,0,7.1,1.1,7.4a2,2,0,0,0,2.1-.9,12.8,12.8,0,0,0,1.5-3.1c0-.2.2-.2.5,0a1.8,1.8,0,0,1-.1,2.1,9.6,9.6,0,0,1-3.9,4.3,6.6,6.6,0,0,1-5.5.4c-1.9-.6-3-2.4-3.4-5.4a11.1,11.1,0,0,1-3.5,4.4,5.9,5.9,0,0,1-4.3,1.3,4.4,4.4,0,0,1-3.5-2.5,9.9,9.9,0,0,1-.7-6.2c.6-4.8.9-8.1.7-9.7l1.1-.4,2-.5a7.1,7.1,0,0,1,2.5-.1,3.3,3.3,0,0,1,1.9.7c1.2,1.2,1.3,3.8.1,7.9S145,71,146.3,71s1.2-.6,1.9-1.8a16.9,16.9,0,0,0,1.5-4.2,29.3,29.3,0,0,1,.3-4.1A5.9,5.9,0,0,1,151.9,56.8Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M169.8,73.9q-2.2,2.5-3.9,2.1c-1.6-.5-2.3-1.7-2.1-3.7a5.4,5.4,0,0,1,2.9-4.6,5.5,5.5,0,0,1,4.9-.2c1-2,1.6-3.3,1.9-4a.8.8,0,0,0,.2-.5,5.8,5.8,0,0,1-1.8.4,10,10,0,0,1-5.4-.9,53.5,53.5,0,0,1-3.7,7.3c-.7,1.1-1.2,1.3-1.6.7a.4.4,0,0,1-.1-.3,35.6,35.6,0,0,0,3.2-9.2,8.8,8.8,0,0,1-2.4-3.7,6.4,6.4,0,0,1,.1-4.1,3.7,3.7,0,0,1,2.2-2.2,3.3,3.3,0,0,1,4.5,3.4,8.8,8.8,0,0,1-.2,1.6,26.8,26.8,0,0,0,9.4-.6,5.1,5.1,0,0,1,2.5-2.1,1.2,1.2,0,0,1,1.6.7c.3.8,0,2.1-1.1,3.9a10.6,10.6,0,0,1-4.8,4.3,2.4,2.4,0,0,0-.3.7,1.7,1.7,0,0,0-.3.7c-.7,1.8-1.5,3.3-2.2,4.7,2.8,1.3,5,2,6.6,2s2.8-1.1,3.4-3q.1-.3.6,0a2.2,2.2,0,0,1-.1,2.1c-2.2,4.8-5,6.9-8.3,6.4A25.2,25.2,0,0,1,169.8,73.9Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M193.7,73.7a8.1,8.1,0,0,1-3.8,1.4,3.6,3.6,0,0,1-2.6-1.4,4,4,0,0,1-1.3-3.2,3.7,3.7,0,0,1,1.9-2.9,6.7,6.7,0,0,1,3.9-1.2,4.5,4.5,0,0,1,3.3,1.2,3.7,3.7,0,0,1,1,2.9C196,71.7,195.2,72.7,193.7,73.7Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M207.9,59.7a5.9,5.9,0,0,0,.7-3c0-.4-.1-.7-.3-.8a.6.6,0,0,0-.8,0,1.8,1.8,0,0,0-1,.8c-.8,1-1.4,3.3-1.7,6.7a8.1,8.1,0,0,0,1.1,5.5,5.1,5.1,0,0,0,4.2,2.2,8.8,8.8,0,0,0,4.7-1.1,5.6,5.6,0,0,0,2.8-2.9c0-.2.1-.2.4.1a2,2,0,0,1,0,2.1,10,10,0,0,1-4.2,3.9,13.6,13.6,0,0,1-7.3,1.3,10.5,10.5,0,0,1-6.7-2.9,7.8,7.8,0,0,1-2.5-6.8,11.3,11.3,0,0,1,1.9-5.5,10.4,10.4,0,0,1,3.8-3.5,15.6,15.6,0,0,1,4.5-1.4,5.7,5.7,0,0,1,4.1.6,5.5,5.5,0,0,1,2.7,2.7,4.8,4.8,0,0,1,.1,3.7c-.9,1.9-3.1,2.4-6.6,1.4-1.4-.5-2.1-.8-2.1-1A3.5,3.5,0,0,0,207.9,59.7Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M217.5,72a7.8,7.8,0,0,1-2.3-6.8c.3-3.3,1.5-5.8,3.8-7.5a10.3,10.3,0,0,1,6.9-2.5,2.7,2.7,0,0,1,2.5-1.8q2.3-.4,3.6,2.7a16.9,16.9,0,0,1,.8,7.8,12.8,12.8,0,0,1-.7,3.4h.2a1.1,1.1,0,0,0,.8-.3l.8-.4.6-.6.5-.6.3-.6.2-.2c.2-.2.4-.2.6.2s.2.8-.1,1.5a4.7,4.7,0,0,1-4,2.6h-.6a9.5,9.5,0,0,1-7.9,5.4A7.5,7.5,0,0,1,217.5,72Zm7.8-15.6-.3.2a5.4,5.4,0,0,0-1.6,2.8,24.1,24.1,0,0,0-.7,4.9,9.7,9.7,0,0,0,.8,4.6,2.9,2.9,0,0,0,2.5,1.7c1.4.1,2.5-.6,3.6-2.2a7.4,7.4,0,0,1-3.7-3.9A11.5,11.5,0,0,1,225.3,56.4ZM230.4,67a8.9,8.9,0,0,0,.7-2.6,5.9,5.9,0,0,0-.4-3.1,1.6,1.6,0,0,0-1.6-1,1.9,1.9,0,0,0-1.4,1.1,3.3,3.3,0,0,0,0,2.4A4.6,4.6,0,0,0,230.4,67Z"
-                transform="translate(0 -27.6)" />
-              <path
-                d="M247.7,61.8c.3-1.2.5-1.9.6-2.2a1.9,1.9,0,0,0-.1-1c-.6-.3-1.4.1-2.3,1.2a18.6,18.6,0,0,0-2.6,5.3,31,31,0,0,0-1.5,7.6v1.4a6.7,6.7,0,0,1-4.3.4q-2.4-.4-2.7-2.4a52.4,52.4,0,0,1-.1-9,39.3,39.3,0,0,0,0-8.4l1.1-.4,2.2-.5a8.6,8.6,0,0,1,2.7-.2,3.4,3.4,0,0,1,2,.7c1.2,1.1,1.6,3.1,1.1,6a11.9,11.9,0,0,1,4.9-4.6,6.1,6.1,0,0,1,5-.5,2.2,2.2,0,0,1,1.4,2.1,18.2,18.2,0,0,1-.5,4.7,13.6,13.6,0,0,1,5.2-6c2.2-1.2,4.1-1.5,5.8-.8s1.6,1.4,1.6,2.9a17.8,17.8,0,0,1-.9,5.8q-1.5,6.8,0,7.2c.7.3,1.4,0,2.2-.9a9.2,9.2,0,0,0,1.7-3.1c0-.2.1-.2.4.1a2,2,0,0,1,0,2.1,9.2,9.2,0,0,1-4,4.1,6.4,6.4,0,0,1-5.2.9q-3.9-1-2.7-9a22.1,22.1,0,0,1,.8-3.5,19.7,19.7,0,0,1,.7-2.2,1.4,1.4,0,0,0-.2-1c-.6-.3-1.3.1-2.2,1.2a18.6,18.6,0,0,0-2.6,5.3,27,27,0,0,0-1.5,7.6q.1.9,0,.9c-1.1.8-2.6.9-4.5.6s-2.8-1.2-2.9-2.5a31.7,31.7,0,0,1,.4-6.4A22.5,22.5,0,0,1,247.7,61.8Z"
-                transform="translate(0 -27.6)" />
-            </g>
-            <g id="initB" class="cls-1">
-              <path
-                d="M102.5,92q-7.8-4.1-9-11.1a11.4,11.4,0,0,1,2.8-10.5,19.2,19.2,0,0,1,9.5-5.7,18.4,18.4,0,0,1,9.6-.1,2.4,2.4,0,0,1,1.6,2,10.6,10.6,0,0,1-.1,3.1l-.3,1.5c-5.3-.7-9.9-.4-13.6.9s-5.6,3.7-5.4,7.2,2.4,6.4,7,9.1A48.9,48.9,0,0,0,122,93.7q15.5,1.8,26.1-3c7.1-3.1,10.9-7.6,11.6-13.2a10.6,10.6,0,0,0-5.2-10.8c-3.9-2.6-8.7-3.6-14.4-3.2a29.6,29.6,0,0,1-4.2.4c-.9-2-.5-3,1.3-3.2a17.8,17.8,0,0,0,11.2-5,15.3,15.3,0,0,0,4.8-11c.1-4.6-1.2-7.9-4.2-10s-7.8-2.8-14.6-2.4c-9.9.6-16.9,3.2-21.2,7.7q-3.3,3.6-1.8,6l.3.5c.2.1-.1.3-.6.7a7.2,7.2,0,0,1-6.4.1l-1.3-1c-1.5-1.5-1.4-3.8.4-6.7,3.2-4.9,9.7-8.4,19.5-10.4a75.2,75.2,0,0,1,12.4-1.5c9.8-.5,17.4.6,22.9,3.1s8.1,6.8,7.8,12.6c-.5,7.3-5.2,12.9-14.4,16.9,14.1.2,21.1,4.8,20.9,13.9-.1,5-2.5,9.4-7.1,13.2s-10.9,6.6-18.9,8.3a87.7,87.7,0,0,1-26.4,1.2A46.8,46.8,0,0,1,102.5,92ZM134,63.5q-1.4,7.2-2.1,10.2c-.4,2.1-.8,4.3-1.1,6.6a54.5,54.5,0,0,0-.5,6.8,17.7,17.7,0,0,0,.1,2.4c.1.8.2,1.3.2,1.6v.4a7.1,7.1,0,0,1-5.1.4c-2.1-.4-3.4-1.3-3.7-2.8a7.5,7.5,0,0,1-.4-2.6,36.9,36.9,0,0,1,.2-4.1c.2-1.9.4-4,.6-6.4s.5-5.9.9-10.8.7-10.3,1-16a66.9,66.9,0,0,0-.1-11.9l1-.4,2.2-.7a17.7,17.7,0,0,1,3-.6,15,15,0,0,1,3,0,5.3,5.3,0,0,1,2.4,1,6.6,6.6,0,0,1,2,4.7,31.7,31.7,0,0,1-.8,8.5C135.9,54.2,135,58.8,134,63.5Z"
-                transform="translate(0 -27.6)" />
-            </g>
-          </g>
-        </svg></a>
+    <body>
 
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseMenu"
-        aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
+        <!-- Navigation start-->
+        <nav class="navbar navbar-expand-lg">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="https://bekhruz.com">
+                    <svg loading="lazy" height="68.91px" width="270.92px">
+                        <g id="logo">
+                            <g id="logo_main">
+                                <path
+                                    d="M6.5,81.4Q1.1,78.6.2,73.6a8,8,0,0,1,2-7.4,13.1,13.1,0,0,1,6.7-3.9,12.7,12.7,0,0,1,6.7-.1,1.6,1.6,0,0,1,1.1,1.4,5.4,5.4,0,0,1-.1,2.2l-.2,1a19.4,19.4,0,0,0-9.5.7c-2.7.9-3.9,2.6-3.8,5S4.8,77,8,78.9a32.5,32.5,0,0,0,12.2,3.7Q31,84,38.5,80.5c5-2.2,7.7-5.3,8.2-9.3a7.6,7.6,0,0,0-3.6-7.5A16,16,0,0,0,33,61.4l-3,.3c-.7-1.4-.4-2.1.9-2.2a12.9,12.9,0,0,0,7.9-3.6,10.1,10.1,0,0,0,3.3-7.7c.1-3.2-.8-5.5-2.9-7s-5.5-2-10.3-1.7c-6.9.5-11.8,2.3-14.8,5.4s-2,3.1-1.3,4.2.1.2.2.3,0,.3-.4.6a5.4,5.4,0,0,1-4.5.1,3.5,3.5,0,0,1-.9-.7c-1.1-1.1-1-2.7.3-4.7s6.7-6,13.6-7.4a57.7,57.7,0,0,1,8.7-1c6.9-.4,12.3.4,16.1,2.2s5.7,4.7,5.5,8.8-3.7,9.1-10.1,11.9c9.9.1,14.8,3.4,14.6,9.7,0,3.5-1.7,6.6-4.9,9.3S43.3,82.8,37.7,84a59.4,59.4,0,0,1-18.6.9A32.5,32.5,0,0,1,6.5,81.4Zm22.2-20-1.5,7.2c-.3,1.4-.6,3-.8,4.6a41.2,41.2,0,0,0-.3,4.8v1.7a7.5,7.5,0,0,0,.2,1.1v.3a5.2,5.2,0,0,1-3.6.3c-1.5-.3-2.4-1-2.6-2a5.7,5.7,0,0,1-.3-1.8c0-.6,0-1.6.1-2.9s.3-2.9.5-4.5.3-4.1.6-7.6.5-7.2.7-11.3a57.4,57.4,0,0,0,0-8.3l.6-.2,1.6-.5,2.1-.5a7.7,7.7,0,0,1,2.1.1,3.8,3.8,0,0,1,1.7.6,5,5,0,0,1,1.4,3.3,24,24,0,0,1-.6,6C30,54.9,29.4,58.1,28.7,61.4Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M70,65.2a12.7,12.7,0,0,1-5.5,1.3,6.2,6.2,0,0,0,2.2,3.4,5.2,5.2,0,0,0,3.2,1.3,7.9,7.9,0,0,0,4.5-1.1,5.8,5.8,0,0,0,2.8-3c0-.2.1-.2.4.1a2,2,0,0,1,0,2.1c-.6,1.4-2.1,2.7-4.3,3.8a13.5,13.5,0,0,1-7.2,1.4,11.7,11.7,0,0,1-6.8-2.7,7.6,7.6,0,0,1-2.4-6.6,13.2,13.2,0,0,1,1.6-5.1,10.7,10.7,0,0,1,3.1-3.5,12.7,12.7,0,0,1,3.8-2,11,11,0,0,1,3.8-.7,5.5,5.5,0,0,1,2.8.6,4.3,4.3,0,0,1,2.2,3.4,6.3,6.3,0,0,1-.8,4.4A7.7,7.7,0,0,1,70,65.2Zm-5.7-.4c2.4-1.3,3.7-3.9,4-7.8,0-.9,0-1.4-.3-1.6s-.5,0-1,.6a15.2,15.2,0,0,0-2.6,7.9A2.2,2.2,0,0,0,64.3,64.8Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M83.1,61.1a15.2,15.2,0,0,1,3.3-4.7,11.5,11.5,0,0,1,3.9-2.7,7.6,7.6,0,0,1,3.6-.4,3.5,3.5,0,0,1,2.5,1.5,6.9,6.9,0,0,1,1,3.6,7.8,7.8,0,0,1-1.3,4.3,9.7,9.7,0,0,1-3.8,3.7c-.5.2-.3.7.4,1.5a10.9,10.9,0,0,0,3.7,2.6,2.3,2.3,0,0,0,2.4-.7,6.2,6.2,0,0,0,1.7-2.7c0-.2.2-.1.5.2a2,2,0,0,1-.1,2,11.7,11.7,0,0,1-3.6,4.4,5.4,5.4,0,0,1-4.7,1.2,13.1,13.1,0,0,1-4.4-3c-1.7-1.6-2.9-2.9-3.8-3.9s-.6-1.7.2-2.1a14.1,14.1,0,0,0,3.8-3.3A3.6,3.6,0,0,0,89.5,60a5.3,5.3,0,0,0-.5-1.8c-.8-.9-1.8-.4-3.2,1.4s-3.1,6.1-3.6,10.8v3.2a6.2,6.2,0,0,1-4.4.5q-2.7-.6-3-2.4t.9-11.1q1.2-8.7,1.5-12.9a56.5,56.5,0,0,0-.1-8.3l.6-.3,1.4-.5,2-.4a6.7,6.7,0,0,1,2,0,4.4,4.4,0,0,1,1.7.7,5.6,5.6,0,0,1,1.4,3.3,21.4,21.4,0,0,1-.7,6Q83.3,60.1,83.1,61.1Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M106.3,61.9a14,14,0,0,1,5.3-5.7,7.7,7.7,0,0,1,5.9-1,2.4,2.4,0,0,1,1.6,2.4,22.6,22.6,0,0,1-.7,5.1l-.2,1.2-.6,3.1a16.5,16.5,0,0,0-.2,2.1,3,3,0,0,0,.2,1.5c.1.3.3.4.6.5s1.4,0,2.2-.9a9.2,9.2,0,0,0,1.7-3.1c0-.2.2-.1.5.2s.3,1.1-.2,2a9,9,0,0,1-3.9,4.1,6.6,6.6,0,0,1-5.3.9q-3.7-1-2.7-9a18.9,18.9,0,0,1,.9-3.4,19.3,19.3,0,0,1,.6-2,1.3,1.3,0,0,0-.2-.8q-.7-.5-2.1.6a11,11,0,0,0-2.5,4,24.5,24.5,0,0,0-1.7,6.6,12.7,12.7,0,0,0,.1,2v1.3a6.5,6.5,0,0,1-4.5.5c-1.8-.4-2.8-1.2-2.9-2.4s.1-5.4.9-11.1,1.3-10.1,1.4-12.9a57.4,57.4,0,0,0,0-8.3l.6-.3,1.4-.5,2-.4a6,6,0,0,1,1.9,0,3.4,3.4,0,0,1,1.7.7,5,5,0,0,1,1.4,3.3,24.9,24.9,0,0,1-.6,6C107.6,54.3,106.7,58.9,106.3,61.9Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M124.3,58.3a3.9,3.9,0,0,1-3-2.3,2.7,2.7,0,0,1,.4-3c1-1.7,2.3-2.6,4-2.5s2.4,1.1,2.2,3.3a7.6,7.6,0,0,1-.1,1.4H131l2.5-.3h1.6a1.6,1.6,0,0,1,1.1.4q.6.9-1.2,8.7c-.9,4.4-.8,6.8.5,7.2s1.6,0,2.5-.9a9,9,0,0,0,1.8-3.1c0-.2.2-.2.5.1a2,2,0,0,1,0,2.1,9.5,9.5,0,0,1-4.3,4.1q-3.1,1.6-5.4.9c-2.8-.8-3.9-3.8-3.1-9l1.2-6.7H127a39.5,39.5,0,0,1-4.6,11c-.7,1.2-1.3,1.4-1.7.8a.8.8,0,0,1-.1-.3C122.4,67.5,123.6,63.5,124.3,58.3Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M151.9,56.8a5.2,5.2,0,0,1,7,.1,31.7,31.7,0,0,0-1.1,7c-.4,4.6,0,7.1,1.1,7.4a2,2,0,0,0,2.1-.9,12.8,12.8,0,0,0,1.5-3.1c0-.2.2-.2.5,0a1.8,1.8,0,0,1-.1,2.1,9.6,9.6,0,0,1-3.9,4.3,6.6,6.6,0,0,1-5.5.4c-1.9-.6-3-2.4-3.4-5.4a11.1,11.1,0,0,1-3.5,4.4,5.9,5.9,0,0,1-4.3,1.3,4.4,4.4,0,0,1-3.5-2.5,9.9,9.9,0,0,1-.7-6.2c.6-4.8.9-8.1.7-9.7l1.1-.4,2-.5a7.1,7.1,0,0,1,2.5-.1,3.3,3.3,0,0,1,1.9.7c1.2,1.2,1.3,3.8.1,7.9S145,71,146.3,71s1.2-.6,1.9-1.8a16.9,16.9,0,0,0,1.5-4.2,29.3,29.3,0,0,1,.3-4.1A5.9,5.9,0,0,1,151.9,56.8Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M169.8,73.9q-2.2,2.5-3.9,2.1c-1.6-.5-2.3-1.7-2.1-3.7a5.4,5.4,0,0,1,2.9-4.6,5.5,5.5,0,0,1,4.9-.2c1-2,1.6-3.3,1.9-4a.8.8,0,0,0,.2-.5,5.8,5.8,0,0,1-1.8.4,10,10,0,0,1-5.4-.9,53.5,53.5,0,0,1-3.7,7.3c-.7,1.1-1.2,1.3-1.6.7a.4.4,0,0,1-.1-.3,35.6,35.6,0,0,0,3.2-9.2,8.8,8.8,0,0,1-2.4-3.7,6.4,6.4,0,0,1,.1-4.1,3.7,3.7,0,0,1,2.2-2.2,3.3,3.3,0,0,1,4.5,3.4,8.8,8.8,0,0,1-.2,1.6,26.8,26.8,0,0,0,9.4-.6,5.1,5.1,0,0,1,2.5-2.1,1.2,1.2,0,0,1,1.6.7c.3.8,0,2.1-1.1,3.9a10.6,10.6,0,0,1-4.8,4.3,2.4,2.4,0,0,0-.3.7,1.7,1.7,0,0,0-.3.7c-.7,1.8-1.5,3.3-2.2,4.7,2.8,1.3,5,2,6.6,2s2.8-1.1,3.4-3q.1-.3.6,0a2.2,2.2,0,0,1-.1,2.1c-2.2,4.8-5,6.9-8.3,6.4A25.2,25.2,0,0,1,169.8,73.9Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M193.7,73.7a8.1,8.1,0,0,1-3.8,1.4,3.6,3.6,0,0,1-2.6-1.4,4,4,0,0,1-1.3-3.2,3.7,3.7,0,0,1,1.9-2.9,6.7,6.7,0,0,1,3.9-1.2,4.5,4.5,0,0,1,3.3,1.2,3.7,3.7,0,0,1,1,2.9C196,71.7,195.2,72.7,193.7,73.7Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M207.9,59.7a5.9,5.9,0,0,0,.7-3c0-.4-.1-.7-.3-.8a.6.6,0,0,0-.8,0,1.8,1.8,0,0,0-1,.8c-.8,1-1.4,3.3-1.7,6.7a8.1,8.1,0,0,0,1.1,5.5,5.1,5.1,0,0,0,4.2,2.2,8.8,8.8,0,0,0,4.7-1.1,5.6,5.6,0,0,0,2.8-2.9c0-.2.1-.2.4.1a2,2,0,0,1,0,2.1,10,10,0,0,1-4.2,3.9,13.6,13.6,0,0,1-7.3,1.3,10.5,10.5,0,0,1-6.7-2.9,7.8,7.8,0,0,1-2.5-6.8,11.3,11.3,0,0,1,1.9-5.5,10.4,10.4,0,0,1,3.8-3.5,15.6,15.6,0,0,1,4.5-1.4,5.7,5.7,0,0,1,4.1.6,5.5,5.5,0,0,1,2.7,2.7,4.8,4.8,0,0,1,.1,3.7c-.9,1.9-3.1,2.4-6.6,1.4-1.4-.5-2.1-.8-2.1-1A3.5,3.5,0,0,0,207.9,59.7Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M217.5,72a7.8,7.8,0,0,1-2.3-6.8c.3-3.3,1.5-5.8,3.8-7.5a10.3,10.3,0,0,1,6.9-2.5,2.7,2.7,0,0,1,2.5-1.8q2.3-.4,3.6,2.7a16.9,16.9,0,0,1,.8,7.8,12.8,12.8,0,0,1-.7,3.4h.2a1.1,1.1,0,0,0,.8-.3l.8-.4.6-.6.5-.6.3-.6.2-.2c.2-.2.4-.2.6.2s.2.8-.1,1.5a4.7,4.7,0,0,1-4,2.6h-.6a9.5,9.5,0,0,1-7.9,5.4A7.5,7.5,0,0,1,217.5,72Zm7.8-15.6-.3.2a5.4,5.4,0,0,0-1.6,2.8,24.1,24.1,0,0,0-.7,4.9,9.7,9.7,0,0,0,.8,4.6,2.9,2.9,0,0,0,2.5,1.7c1.4.1,2.5-.6,3.6-2.2a7.4,7.4,0,0,1-3.7-3.9A11.5,11.5,0,0,1,225.3,56.4ZM230.4,67a8.9,8.9,0,0,0,.7-2.6,5.9,5.9,0,0,0-.4-3.1,1.6,1.6,0,0,0-1.6-1,1.9,1.9,0,0,0-1.4,1.1,3.3,3.3,0,0,0,0,2.4A4.6,4.6,0,0,0,230.4,67Z"
+                                    transform="translate(0 -27.6)" />
+                                <path
+                                    d="M247.7,61.8c.3-1.2.5-1.9.6-2.2a1.9,1.9,0,0,0-.1-1c-.6-.3-1.4.1-2.3,1.2a18.6,18.6,0,0,0-2.6,5.3,31,31,0,0,0-1.5,7.6v1.4a6.7,6.7,0,0,1-4.3.4q-2.4-.4-2.7-2.4a52.4,52.4,0,0,1-.1-9,39.3,39.3,0,0,0,0-8.4l1.1-.4,2.2-.5a8.6,8.6,0,0,1,2.7-.2,3.4,3.4,0,0,1,2,.7c1.2,1.1,1.6,3.1,1.1,6a11.9,11.9,0,0,1,4.9-4.6,6.1,6.1,0,0,1,5-.5,2.2,2.2,0,0,1,1.4,2.1,18.2,18.2,0,0,1-.5,4.7,13.6,13.6,0,0,1,5.2-6c2.2-1.2,4.1-1.5,5.8-.8s1.6,1.4,1.6,2.9a17.8,17.8,0,0,1-.9,5.8q-1.5,6.8,0,7.2c.7.3,1.4,0,2.2-.9a9.2,9.2,0,0,0,1.7-3.1c0-.2.1-.2.4.1a2,2,0,0,1,0,2.1,9.2,9.2,0,0,1-4,4.1,6.4,6.4,0,0,1-5.2.9q-3.9-1-2.7-9a22.1,22.1,0,0,1,.8-3.5,19.7,19.7,0,0,1,.7-2.2,1.4,1.4,0,0,0-.2-1c-.6-.3-1.3.1-2.2,1.2a18.6,18.6,0,0,0-2.6,5.3,27,27,0,0,0-1.5,7.6q.1.9,0,.9c-1.1.8-2.6.9-4.5.6s-2.8-1.2-2.9-2.5a31.7,31.7,0,0,1,.4-6.4A22.5,22.5,0,0,1,247.7,61.8Z"
+                                    transform="translate(0 -27.6)" />
+                            </g>
+                            <g id="initB" class="cls-1">
+                                <path
+                                    d="M102.5,92q-7.8-4.1-9-11.1a11.4,11.4,0,0,1,2.8-10.5,19.2,19.2,0,0,1,9.5-5.7,18.4,18.4,0,0,1,9.6-.1,2.4,2.4,0,0,1,1.6,2,10.6,10.6,0,0,1-.1,3.1l-.3,1.5c-5.3-.7-9.9-.4-13.6.9s-5.6,3.7-5.4,7.2,2.4,6.4,7,9.1A48.9,48.9,0,0,0,122,93.7q15.5,1.8,26.1-3c7.1-3.1,10.9-7.6,11.6-13.2a10.6,10.6,0,0,0-5.2-10.8c-3.9-2.6-8.7-3.6-14.4-3.2a29.6,29.6,0,0,1-4.2.4c-.9-2-.5-3,1.3-3.2a17.8,17.8,0,0,0,11.2-5,15.3,15.3,0,0,0,4.8-11c.1-4.6-1.2-7.9-4.2-10s-7.8-2.8-14.6-2.4c-9.9.6-16.9,3.2-21.2,7.7q-3.3,3.6-1.8,6l.3.5c.2.1-.1.3-.6.7a7.2,7.2,0,0,1-6.4.1l-1.3-1c-1.5-1.5-1.4-3.8.4-6.7,3.2-4.9,9.7-8.4,19.5-10.4a75.2,75.2,0,0,1,12.4-1.5c9.8-.5,17.4.6,22.9,3.1s8.1,6.8,7.8,12.6c-.5,7.3-5.2,12.9-14.4,16.9,14.1.2,21.1,4.8,20.9,13.9-.1,5-2.5,9.4-7.1,13.2s-10.9,6.6-18.9,8.3a87.7,87.7,0,0,1-26.4,1.2A46.8,46.8,0,0,1,102.5,92ZM134,63.5q-1.4,7.2-2.1,10.2c-.4,2.1-.8,4.3-1.1,6.6a54.5,54.5,0,0,0-.5,6.8,17.7,17.7,0,0,0,.1,2.4c.1.8.2,1.3.2,1.6v.4a7.1,7.1,0,0,1-5.1.4c-2.1-.4-3.4-1.3-3.7-2.8a7.5,7.5,0,0,1-.4-2.6,36.9,36.9,0,0,1,.2-4.1c.2-1.9.4-4,.6-6.4s.5-5.9.9-10.8.7-10.3,1-16a66.9,66.9,0,0,0-.1-11.9l1-.4,2.2-.7a17.7,17.7,0,0,1,3-.6,15,15,0,0,1,3,0,5.3,5.3,0,0,1,2.4,1,6.6,6.6,0,0,1,2,4.7,31.7,31.7,0,0,1-.8,8.5C135.9,54.2,135,58.8,134,63.5Z"
+                                    transform="translate(0 -27.6)" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
 
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="collapseMenu">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" data-lang-item="nav_projects" aria-current="page" href="./resume/index.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="reversi/Reversi/reversi.html" data-lang-item="nav_reversi">Reversi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://old.bekhruz.com" data-lang-item="old-page">Old website</a>
-          </li>
-          <!-- Navbar dropdown -->
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-lang-item="nav_covid19" role="button"
-              data-mdb-toggle="dropdown" aria-expanded="false">
-              Covid-19
-            </a> -->
-            <!-- Dropdown menu -->
-            <!-- <ul class="dropdown-menu" aria-labelledby="covid19">
-              <li><a class="dropdown-item" data-lang-item="nav_action1" href="#">Action</a></li>
-              <li><a class="dropdown-item" data-lang-item="nav_action2" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" data-lang-item="nav_action3" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" data-lang-item="shapalok" href="https://shapalok.com">Shapalok</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-lang-item="nav_blogs" href="article.html">Articles</a>
-          </li>
-        </ul>
-        <!-- Left links -->
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseMenu"
+                    aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="collapseMenu">
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" data-lang-item="nav_projects" aria-current="page"
+                                href="/resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reversi" data-lang-item="nav_reversi">Reversi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://old.bekhruz.com" data-lang-item="old-page">Old website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-lang-item="shapalok" target='_blank'
+                                href="https://shapalok.com">Shapalok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-lang-item="nav_blogs" href="article.html">Articles</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
 
 
-        <!-- LOGIN STARTS HEREEEEEEEEEE -->
-        <div class="nav-item navbar-nav" id="login-nav">
-
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="settingsDropdown" aria-expanded="false">
-              <i class="fas fa-cog fa-lg"></i>
-            </button>
-            <div class="dropdown-menu-custom" aria-labelledby="settingsDropdown">
-              <div class="dropdown-item language d-flex align-items-center">
-                <label for="language_selector">Language</label>
-                <select class="select form-control" id="language_selector" aria-multiselectable="false">
-                  <option value="en" data-reload>En</option>
-                  <option value="uz" data-reload>Uz</option>
-                  <option value="ja" data-reload>Ja</option>
-                </select>
-
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="language_dropdown" role="button"
-                    data-mdb-toggle="dropdown" aria-expanded="false">
-                    <i class="united kingdom flag m-0"></i>
-                  </a>
-                  <ul class="submenu dropdown-menu-dark" aria-labelledby="language_dropdown">
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English
-                        <i class="fa fa-check text-success ms-2"></i></a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="poland flag"></i>Polski</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="china flag"></i>中文</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="japan flag"></i>日本語</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="germany flag"></i>Deutsch</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="france flag"></i>Français</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="spain flag"></i>Español</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="russia flag"></i>Русский</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"><i class="portugal flag"></i>Português</a>
-                    </li>
-                  </ul>
-                </li> -->
-              </div>
-              <div class="dropdown-item theme d-flex justify-content-between">
-                <label for="dark_mode_toggle_div">Theme</label>
-                <div class="theme-toggle" id="dark_mode_toggle_div">
-                  <input type="checkbox" name="dark_mode_toggle" id="dark_mode_toggle" checked
-                    aria-label="toggle dark mode">
-                  <label for="dark_mode_toggle" class="label">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                  </label>
-                </div>
-              </div>
-              <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <!-- LOGIN STARTS HEREEEEEEEEEE -->
+                    <div class="nav-item navbar-nav d-flex flex-row align-items-center gap-4 mx-3" id="settings-nav">
+                        <div class="theme d-flex theme-toggle" title='Theme'>
+                            <!-- <label for="dark_mode_toggle_div">Theme</label> -->
+                            <!-- <div class="theme-toggle" id="dark_mode_toggle_div"> -->
+                            <input type="checkbox" name="dark_mode_toggle" id="dark_mode_toggle" checked
+                                aria-label="toggle dark mode">
+                            <label for="dark_mode_toggle" class="label">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <div class="ball"></div>
+                            </label>
+                            <!-- </div> -->
+                        </div>
+                        <div class="language d-flex align-items-center" title='Language'>
+                            <!-- <label for="language_selector">Language</label> -->
+                            <select class="select form-control" id="language_selector" aria-multiselectable="false">
+                                <option value="en" data-reload>En</option>
+                                <option value="uz" data-reload>Uz</option>
+                                <option value="ja" data-reload>Ja</option>
+                            </select>
+                        </div>
+                        <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </div>
-          </div>
-
-
-
-          <a class="nav_login nav-link" href="#" role="button" data-lang-item="nav_login" aria-expanded="false"
-            data-mdb-toggle="modal" data-mdb-target="#login-modal"> Login </a>
-          <!-- <span><i class="fas fa-fw fa-sign-in-alt"></i></span>  -->
-        </div>
-      </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navigation end-->
-  <!-- Button trigger modal -->
-
-  <!-- particles -->
-  <div id="particles-js"></div>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content shadow">
-        <div class="modal-header">
-          <h5 class="modal-title" data-lang-item="login_title" id="login-modal-label">Login with your credentials</h5>
-          <button type="button" class="btn-light" data-mdb-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <!-- username input -->
-            <div class="form-outline mb-4">
-              <input type="username" id="username" class="form-control" autocomplete="username"
-                aria-autocomplete="username" />
-              <label class="form-label" data-lang-item="login_username" for="username">Username</label>
-            </div>
-
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="password" class="form-control" autocomplete="current-password" />
-              <label class="form-label" data-lang-item="login_password" for="password">Password</label>
-            </div>
-
-            <!-- 2 column grid layout for inline styling -->
-            <div class="row mb-4">
-              <div class="col d-flex justify-content-center">
-                <!-- Checkbox -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="rememberme" checked />
-                  <label class="form-check-label" data-lang-item="login_remember_me" for="rememberme"> Remember me
-                  </label>
+                    </div>
                 </div>
-              </div>
-              <div class="col">
-                <!-- Simple link -->
-                <a href="#!" data-lang-item="login_forgot_password">Forgot password?</a>
-              </div>
+            </div>
+            </div>
+            <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navigation end-->
+        <!-- Button trigger modal -->
+
+        <!-- particles -->
+        <div id="particles-js"></div>
+
+
+        <!-- Main contents -->
+        <main>
+            <!-- Intro Section -->
+            <section id="intro" class="container">
+                <div class="card intro">
+                    <div class="row g-0">
+                        <div class="col-md intro-img">
+                            <picture>
+                                <source srcset="img/m2.webp" type="image/webp">
+                                <source srcset="img/m2.png" type="image/png">
+                                <!-- <img src="img/creakyOldJPEG.jpg" alt="Alt Text!"> -->
+                                <img src="img/m2.png" alt="Bekhruz Otaev" class="img-fluid" />
+                            </picture>
+                        </div>
+                        <div class="col-md-7 card-body-parent">
+                            <div class="card-body">
+                                <h3 class="card-title">Bekhruz Otaev</h3>
+                                <h5>
+                                    <span class="txt-rotate" data-period="4000"
+                                        data-rotate='[ "Senior Software Engineer", "ReactJS Developer", "Traveller", "Frontend developer", "Backend developer", "Language Learner"]'></span>
+                                    <!-- <i class="fas fa-fw fa-pencil-alt"></i> -->
+                                </h5>
+
+                                <p class="card-text p1" data-lang-item="intro_p1">Growing up in the outskirts of <a
+                                        target="_blank" href="https://en.wikipedia.org/wiki/Bukhara"
+                                        data-lang-item="intro_p1_bukhara">
+                                        Bukhara<i class="fas fa-external-link-alt"></i></a>,
+                                    I have spent my childhood years with full of curiosity towards science and nature. I
+                                    used to take
+                                    apart
+                                    old electronics and pondered to make sense of how they would work.</p>
+                                <p class="card-text p2 remaining" data-lang-item="intro_p2">
+                                    Then, in my teenage years, I started learning English and with that came my whole
+                                    new perspective of
+                                    the
+                                    world. The more I learned about other cultures, the more I wanted to go out into the
+                                    world and see it
+                                    for myself. Here I am, after a few years, working abroad in Japan. The rest is
+                                    history.
+                                </p>
+                                <p class="card-text see-more">
+                                    <small class="text-muted" data-lang-item="intro_see_more">see more</small> <i
+                                        class="fas fa-angle-double-down"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Abilities section with swiper.js -->
+            <section id="abilities" class="container">
+                <!-- Swiper -->
+                <div class="swiper-container" loading="lazy">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card shadow">
+                            <img src="img/html.png" alt="" srcset="">
+                            <h4 class="technology-name card-header">HTML5</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_html5">
+                                HTML5 was my introduction to programming. It is a new version of the language HTML, with
+                                new elements, attributes, and behaviors that allows more diverse and powerful Web sites
+                                and applications. Please refer to the inspection window to look at how I code in HTML.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/css.png" alt="" srcset="">
+                            <h4 class="technology-name card-header">CSS</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_css">
+                                I would be no developer if I did not know CSS. It is what styles all of the web. Besides
+                                plain css, I also use preprocessors like Sass, CSS powered frameworks like Bootstrap and
+                                Tailwind CSS in my projects. Curious to find out how this page's design came to be?
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="img/Javascript.webp" type="image/webp">
+                                <source srcset="img/Javascript.png" type="image/png">
+                                <img src="img/Javascript.png" alt="" srcset="">
+                            </picture>
+                            <h4 class="technology-name card-header">JavaScript</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_js">
+                                I have been using JavaScript in most of my projects. The ones you can directly see are
+                                Covid-19 data analyzer,
+                                <a href="reversi/Reversi/reversi.html">Reversi game</a> and the page you are looking at
+                                has some JS involved. Check out the source codes in my Github profile.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/django.png" alt="" srcset="">
+                            <h4 class="technology-name card-header">Django</h4>
+                            <p class="technology-description" data-lang-item="swiper_django">
+                                Django was my very first step towards full-stack development. It is at the core of my
+                                personal website and projects that involve databases and REST APIs. Django's model
+                                architecture makes it easier for me to work with different databases. Plus, I can scale
+                                anything up in no time with Django.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="img/python.webp" type="image/webp">
+                                <source srcset="img/python.png" type="image/png">
+                                <img src="img/python.png" alt="" srcset="">
+                            </picture>
+                            <h4 class="technology-name card-header">Python</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_python">
+                                Python - the language on the hype, yet it is what really pushed me into determining my
+                                career. I have created news aggregators, web-scrapers, user authentication systems,
+                                websites, automated my workflow with Python. Given the adequate time, I can do almost
+                                anything - any thing with Python.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="img/aws.webp" type="image/webp">
+                                <source srcset="img/aws.jpg" type="image/jpg">
+                                <img src="img/aws.jpg" alt="" srcset="">
+                            </picture>
+                            <h4 class="technology-name card-header">AWS</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_aws">
+                                Amazon's Web Services are really making a lot of our lives easier. I am a customer,
+                                myself, deploying my projects, using AWS databases, storing my files and so on to the
+                                cloud. If you are thinking of scaling your business to the next level, AWS is a way to
+                                go, and I am happy to help!
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/C.png" alt="" srcset="">
+                            <h4 class="technology-name card-header">C</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_c">
+                                C is the father of programming languages, some say. I first got to work with it in my
+                                first job. I created command line games, binary file analyzers and back-end systems with
+                                it. It is super fast. In case you're into embedded systems development and you need a
+                                hand, let me know.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="img/kotlin.webp" type="image/webp">
+                                <source srcset="img/kotlin.png" type="image/png">
+                                <img src="img/kotlin.png" alt="" srcset="">
+                            </picture>
+                            <h4 class="technology-name card-header">Kotlin</h4>
+                            <p class="technology-desctiption" data-lang-item="swiper_kotlin">
+                                Yes, I can also create mobile applications using Kotlin in Android Studio. Although I am
+                                new to mobile app development, creating an app of any complexity is one search away, if
+                                you know what I mean. I have created calculators, educational testing apps and a music
+                                player.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start">
+            <ul class="social-media">
+                <li title='Github'>
+                    <a href="https://github.com/uzbeki" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li title='Telegram'>
+                    <a href="https://t.me/BekhruzOtaev" target="_blank">
+                        <i loading="lazy" class="fa-brands fa-telegram" style="color: #0088cc;" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li title='Youtube'>
+                    <a href="https://www.youtube.com/channel/UCOIqzK2XBsKguBKvXJOL88w" target="_blank">
+                        <i style="color: #ff0000;" loading="lazy" class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+
+                <li title='Twitter'>
+                    <a href="https://twitter.com/BekhruzOtaev" target="_blank">
+                        <i loading="lazy" class="fa-brands fa-twitter" style="color: #1da1f2;"></i>
+                    </a>
+                </li>
+                <li title='Facebook'>
+                    <a href="https://www.facebook.com/bekhruzotaev" target="_blank">
+                        <i style="color: #3b5998;" loading="lazy" class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li title='Linkedin'>
+                    <a href="https://linkedin.com/in/bekhruzotaev" target="_blank">
+                        <i style="color: #0077b5;" loading="lazy" class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center brand-logo">
+                <a class="text-light" href="https://bekhruz.com/">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="logo">
+                                <g id="logo_main">
+                                    <path
+                                        d="M6.5,64.6Q1.1,61.8.2,56.8a8,8,0,0,1,2-7.4,13.3,13.3,0,0,1,6.7-4,12.6,12.6,0,0,1,6.7,0,1.5,1.5,0,0,1,1.1,1.4,4.8,4.8,0,0,1-.1,2.1L16.4,50a20.7,20.7,0,0,0-9.5.6c-2.7,1-3.9,2.6-3.8,5.1S4.8,60.2,8,62a32.5,32.5,0,0,0,12.2,3.8Q31,67,38.5,63.7c5-2.2,7.7-5.3,8.2-9.3a7.7,7.7,0,0,0-3.6-7.6A16,16,0,0,0,33,44.6l-3,.3c-.7-1.4-.4-2.2.9-2.3a12.2,12.2,0,0,0,7.9-3.5,10.3,10.3,0,0,0,3.3-7.7c.1-3.2-.8-5.6-2.9-7s-5.5-2-10.3-1.7c-6.9.4-11.8,2.2-14.8,5.4-1.6,1.7-2,3.1-1.3,4.2s.1.2.2.3,0,.3-.4.5a5.1,5.1,0,0,1-4.5.1,2.2,2.2,0,0,1-.9-.7c-1.1-1.1-1-2.6.3-4.7s6.7-5.9,13.6-7.3a57.4,57.4,0,0,1,8.7-1.1c6.9-.3,12.3.5,16.1,2.2s5.7,4.8,5.5,8.9-3.7,9-10.1,11.8c9.9.2,14.8,3.4,14.6,9.8,0,3.5-1.7,6.6-4.9,9.3S43.3,66,37.7,67.2a59.5,59.5,0,0,1-18.6.8A32.5,32.5,0,0,1,6.5,64.6Zm22.2-20-1.5,7.2c-.3,1.4-.6,2.9-.8,4.6a38.3,38.3,0,0,0-.3,4.7v1.8a5.6,5.6,0,0,0,.2,1v.3a5.2,5.2,0,0,1-3.6.3c-1.5-.3-2.4-.9-2.6-1.9a5.7,5.7,0,0,1-.3-1.8c0-.7,0-1.6.1-3s.3-2.8.5-4.4.3-4.2.6-7.6.5-7.2.7-11.3a57.4,57.4,0,0,0,0-8.3l.6-.3,1.6-.5L26,25a7.4,7.4,0,0,1,2.1,0,3.8,3.8,0,0,1,1.7.7A5,5,0,0,1,31.2,29a24.9,24.9,0,0,1-.6,6C30,38,29.4,41.3,28.7,44.6Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M70,48.4a14.3,14.3,0,0,1-5.5,1.3,6.5,6.5,0,0,0,2.2,3.4,5.9,5.9,0,0,0,3.2,1.3,8,8,0,0,0,4.5-1.2,6,6,0,0,0,2.8-2.9c0-.2.1-.2.4.1s.4,1.1,0,2.1-2.1,2.7-4.3,3.8a13.5,13.5,0,0,1-7.2,1.3A11,11,0,0,1,59.3,55a7.6,7.6,0,0,1-2.4-6.6,12.5,12.5,0,0,1,4.7-8.7,19.8,19.8,0,0,1,3.8-2,14,14,0,0,1,3.8-.7,6.7,6.7,0,0,1,2.8.7A4.1,4.1,0,0,1,74.2,41a6.3,6.3,0,0,1-.8,4.4A8.5,8.5,0,0,1,70,48.4ZM64.3,48c2.4-1.4,3.7-4,4-7.9,0-.8,0-1.4-.3-1.5s-.5,0-1,.5A15.5,15.5,0,0,0,64.4,47,2.8,2.8,0,0,0,64.3,48Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M83.1,44.2a16.5,16.5,0,0,1,3.3-4.7,11.1,11.1,0,0,1,3.9-2.6,7.7,7.7,0,0,1,3.6-.5,3.8,3.8,0,0,1,2.5,1.5,7.5,7.5,0,0,1,1,3.6,7.4,7.4,0,0,1-1.3,4.3,9,9,0,0,1-3.8,3.7c-.5.3-.3.8.4,1.5a10.2,10.2,0,0,0,3.7,2.7,2.6,2.6,0,0,0,2.4-.7,7.7,7.7,0,0,0,1.7-2.7c0-.2.2-.2.5.1a2.2,2.2,0,0,1-.1,2.1,11.7,11.7,0,0,1-3.6,4.4A5,5,0,0,1,92.6,58a14.2,14.2,0,0,1-4.4-2.9c-1.7-1.6-2.9-2.9-3.8-3.9s-.6-1.7.2-2.1a16.1,16.1,0,0,0,3.8-3.3,3.6,3.6,0,0,0,1.1-2.6,4.8,4.8,0,0,0-.5-1.8c-.8-.9-1.8-.4-3.2,1.4s-3.1,6-3.6,10.7v3.3a6.3,6.3,0,0,1-4.4.4q-2.7-.5-3-2.4t.9-11.1c.8-5.7,1.3-10,1.5-12.8a58.1,58.1,0,0,0-.1-8.4l.6-.2,1.4-.5,2-.5h2a3.3,3.3,0,0,1,1.7.7,5.6,5.6,0,0,1,1.4,3.3,20.8,20.8,0,0,1-.7,5.9Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M106.3,45.1a14,14,0,0,1,5.3-5.7c2.2-1.3,4.1-1.6,5.9-1a2.4,2.4,0,0,1,1.6,2.4,22.6,22.6,0,0,1-.7,5.1l-.2,1.1-.6,3.2a14.9,14.9,0,0,0-.2,2.1c0,.7,0,1.2.2,1.4a.9.9,0,0,0,.6.6c.7.3,1.4,0,2.2-.9a10.3,10.3,0,0,0,1.7-3.1c0-.2.2-.2.5.1a2.1,2.1,0,0,1-.2,2.1,8.4,8.4,0,0,1-3.9,4,7.1,7.1,0,0,1-5.3,1q-3.7-1.2-2.7-9a18.9,18.9,0,0,1,.9-3.4,13.2,13.2,0,0,1,.6-2,1.8,1.8,0,0,0-.2-.9c-.5-.3-1.2,0-2.1.7a9.5,9.5,0,0,0-2.5,4,24.5,24.5,0,0,0-1.7,6.6,11.5,11.5,0,0,0,.1,1.9v1.4a6.6,6.6,0,0,1-4.5.4c-1.8-.3-2.8-1.1-2.9-2.4s.1-5.3.9-11.1,1.3-10,1.4-12.8a58.8,58.8,0,0,0,0-8.4l.6-.2,1.4-.5,2-.5h1.9a2.7,2.7,0,0,1,1.7.7,5,5,0,0,1,1.4,3.3,24.1,24.1,0,0,1-.6,5.9C107.6,37.4,106.7,42,106.3,45.1Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M124.3,41.5a3.9,3.9,0,0,1-3-2.3,2.7,2.7,0,0,1,.4-3,4.5,4.5,0,0,1,4-2.6c1.6.1,2.4,1.2,2.2,3.4a8.2,8.2,0,0,1-.1,1.4H131l2.5-.3h1.6a1.6,1.6,0,0,1,1.1.5c.4.6,0,3.5-1.2,8.6s-.8,6.9.5,7.3,1.6-.1,2.5-1a7.8,7.8,0,0,0,1.8-3c0-.2.2-.2.5.1s.4,1.1,0,2.1a9.5,9.5,0,0,1-4.3,4.1q-3.1,1.6-5.4.9c-2.8-.8-3.9-3.8-3.1-9l1.2-6.7H127a39.5,39.5,0,0,1-4.6,11c-.7,1.1-1.3,1.4-1.7.7a.4.4,0,0,1-.1-.3C122.4,50.6,123.6,46.7,124.3,41.5Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M151.9,39.9a6,6,0,0,1,3.7-1.3,5.5,5.5,0,0,1,3.3,1.4,34,34,0,0,0-1.1,7.1c-.4,4.6,0,7.1,1.1,7.4s1.4-.1,2.1-1a11.2,11.2,0,0,0,1.5-3.1c0-.2.2-.1.5.1s.4,1.1-.1,2.1a8.9,8.9,0,0,1-3.9,4.2,6.6,6.6,0,0,1-5.5.5c-1.9-.6-3-2.4-3.4-5.4a10.7,10.7,0,0,1-3.5,4.3,6,6,0,0,1-4.3,1.4,4.6,4.6,0,0,1-3.5-2.5,10.2,10.2,0,0,1-.7-6.3c.6-4.8.9-8,.7-9.7l1.1-.3a8.3,8.3,0,0,1,2-.5,7.2,7.2,0,0,1,2.5-.2,3.3,3.3,0,0,1,1.9.8c1.2,1.2,1.3,3.8.1,7.9s-1.4,7.4-.1,7.4,1.2-.6,1.9-1.8a20.5,20.5,0,0,0,1.5-4.2,28.3,28.3,0,0,1,.3-4.1A6.1,6.1,0,0,1,151.9,39.9Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M169.8,57.1q-2.2,2.5-3.9,2.1c-1.6-.5-2.3-1.7-2.1-3.8a5.4,5.4,0,0,1,2.9-4.5,5.5,5.5,0,0,1,4.9-.2c1-2,1.6-3.3,1.9-4.1a.5.5,0,0,0,.2-.4l-1.8.4a10,10,0,0,1-5.4-.9,51.3,51.3,0,0,1-3.7,7.2c-.7,1.2-1.2,1.4-1.6.8a.8.8,0,0,1-.1-.3,37.8,37.8,0,0,0,3.2-9.3,7.9,7.9,0,0,1-2.4-3.6,6.7,6.7,0,0,1,.1-4.2,3.5,3.5,0,0,1,2.2-2.1,3.1,3.1,0,0,1,3.1.2,3.6,3.6,0,0,1,1.4,3.1,7.8,7.8,0,0,1-.2,1.6,26.8,26.8,0,0,0,9.4-.6,5.1,5.1,0,0,1,2.5-2.1,1.3,1.3,0,0,1,1.6.8c.3.7,0,2-1.1,3.9a11.9,11.9,0,0,1-4.8,4.3,1.5,1.5,0,0,0-.3.7,1.3,1.3,0,0,0-.3.7,40,40,0,0,1-2.2,4.6c2.8,1.4,5,2.1,6.6,2s2.8-1,3.4-3c.1-.2.3-.1.6.1a2.2,2.2,0,0,1-.1,2.1c-2.2,4.7-5,6.8-8.3,6.3A20.4,20.4,0,0,1,169.8,57.1Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M193.7,56.8a7.1,7.1,0,0,1-3.8,1.4,3.5,3.5,0,0,1-2.6-1.3,4.1,4.1,0,0,1-1.3-3.3,3.9,3.9,0,0,1,1.9-2.9,6.7,6.7,0,0,1,3.9-1.2,4.5,4.5,0,0,1,3.3,1.2,3.8,3.8,0,0,1,1,2.9A4.3,4.3,0,0,1,193.7,56.8Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M207.9,42.9a5.9,5.9,0,0,0,.7-3c0-.4-.1-.7-.3-.8a.8.8,0,0,0-.8-.1,2.4,2.4,0,0,0-1,.8c-.8,1.1-1.4,3.3-1.7,6.8a8.2,8.2,0,0,0,1.1,5.5,5.1,5.1,0,0,0,4.2,2.2,8.8,8.8,0,0,0,4.7-1.1,5.6,5.6,0,0,0,2.8-2.9c0-.2.1-.2.4.1s.4,1.1,0,2.1a9.3,9.3,0,0,1-4.2,3.8,12,12,0,0,1-7.3,1.3,10,10,0,0,1-6.7-2.9,7.7,7.7,0,0,1-2.5-6.8,11.7,11.7,0,0,1,1.9-5.5A10.1,10.1,0,0,1,203,39a19.8,19.8,0,0,1,4.5-1.5,6.9,6.9,0,0,1,4.1.6,5.7,5.7,0,0,1,2.7,2.8,4.5,4.5,0,0,1,.1,3.6q-1.3,3-6.6,1.5c-1.4-.5-2.1-.8-2.1-1A3.5,3.5,0,0,0,207.9,42.9Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M217.5,55.1a7.6,7.6,0,0,1-2.3-6.7,10.2,10.2,0,0,1,3.8-7.6,10.7,10.7,0,0,1,6.9-2.4,2.7,2.7,0,0,1,2.5-1.8c1.5-.3,2.7.6,3.6,2.6a17.2,17.2,0,0,1,.8,7.8,12.1,12.1,0,0,1-.7,3.4h.2a1.1,1.1,0,0,0,.8-.2l.8-.4.6-.6.5-.6.3-.6.2-.2c.2-.3.4-.2.6.1s.2.9-.1,1.5-2.5,2.7-4,2.7h-.6a9.2,9.2,0,0,1-7.9,5.3A7.2,7.2,0,0,1,217.5,55.1Zm7.8-15.5H225a5.8,5.8,0,0,0-1.6,2.9,24.1,24.1,0,0,0-.7,4.9,10,10,0,0,0,.8,4.6,3.1,3.1,0,0,0,2.5,1.7c1.4.1,2.5-.7,3.6-2.2a7.6,7.6,0,0,1-3.7-4A11.2,11.2,0,0,1,225.3,39.6Zm5.1,10.5a8.2,8.2,0,0,0,.7-2.5,5.6,5.6,0,0,0-.4-3.1,1.5,1.5,0,0,0-1.6-1,1.8,1.8,0,0,0-1.4,1,3.3,3.3,0,0,0,0,2.4A4.4,4.4,0,0,0,230.4,50.1Z"
+                                        transform="translate(0 -19.3)" />
+                                    <path
+                                        d="M247.7,44.9a17,17,0,0,1,.6-2.1,1.8,1.8,0,0,0-.1-1c-.6-.3-1.4.1-2.3,1.2a17.8,17.8,0,0,0-2.6,5.2,31.9,31.9,0,0,0-1.5,7.7v1.4a6.7,6.7,0,0,1-4.3.4q-2.4-.5-2.7-2.4a52.6,52.6,0,0,1-.1-9,40.2,40.2,0,0,0,0-8.5l1.1-.3,2.2-.6a13.2,13.2,0,0,1,2.7-.2,3.4,3.4,0,0,1,2,.8c1.2,1,1.6,3,1.1,6a12.2,12.2,0,0,1,4.9-4.7,6,6,0,0,1,5-.4,2,2,0,0,1,1.4,2.1,18.6,18.6,0,0,1-.5,4.7,13.9,13.9,0,0,1,5.2-6.1c2.2-1.2,4.1-1.4,5.8-.7s1.6,1.3,1.6,2.8a17.4,17.4,0,0,1-.9,5.8c-1,4.6-1,7,0,7.3s1.4,0,2.2-.9a10.3,10.3,0,0,0,1.7-3.1c0-.2.1-.2.4.1s.4,1.1,0,2.1a8.6,8.6,0,0,1-4,4,6.9,6.9,0,0,1-5.2,1q-3.9-1.2-2.7-9a23.3,23.3,0,0,1,.8-3.6,11.4,11.4,0,0,1,.7-2.1,1.3,1.3,0,0,0-.2-1c-.6-.3-1.3.1-2.2,1.2a17.8,17.8,0,0,0-2.6,5.2,27.7,27.7,0,0,0-1.5,7.7q.1.9,0,.9a6.4,6.4,0,0,1-4.5.6c-1.8-.4-2.8-1.2-2.9-2.6a30.8,30.8,0,0,1,.4-6.3A23.7,23.7,0,0,1,247.7,44.9Z"
+                                        transform="translate(0 -19.3)" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
             </div>
 
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-block mb-4 btn-sign-in" data-lang-item="login_sign_in">Sign in</button>
-
-            <!-- Register buttons -->
-            <div class="text-center">
-              <p data-lang-item="login_not_member">Not a member? </p>
-              <a href="#!" data-lang-item="login_register">Register</a>,
-              <p data-lang-item="login_or_sign_up">or sign up with:</p>
-
-              <button type="button" class="btn btn-floating mx-1 btn-facebook">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-              <button type="button" class="btn btn-floating mx-1  btn-google">
-                <i class="fab google-icon"></i>
-              </button>
-
-              <button type="button" class="btn btn-floating mx-1  btn-twitter">
-                <i class="fab fa-twitter"></i>
-              </button>
-
-              <button type="button" class="btn btn-floating mx-1  btn-github">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <!-- Main contents -->
-  <main>
-    <!-- Intro Section -->
-    <section id="intro" class="container">
-      <div class="card intro">
-        <div class="row g-0">
-          <div class="col-md intro-img">
-            <picture>
-              <source srcset="img/m2.webp" type="image/webp">
-              <source srcset="img/m2.png" type="image/png">
-              <!-- <img src="img/creakyOldJPEG.jpg" alt="Alt Text!"> -->
-              <img src="img/m2.png" alt="Bekhruz Otaev" class="img-fluid" />
-            </picture>
-          </div>
-          <div class="col-md-7 card-body-parent">
-            <div class="card-body">
-              <h3 class="card-title">Bekhruz Otaev</h3>
-              <h5>
-                <span class="txt-rotate" data-period="4000"
-                  data-rotate='[ "Software Engineer", "React Developer", "Traveller", "Front-end developer", "Back-end developer", "Language Learner"]'></span>
-                <!-- <i class="fas fa-fw fa-pencil-alt"></i> -->
-              </h5>
-
-              <p class="card-text p1" data-lang-item="intro_p1">Growing up in the outskirts of <a target="_blank"
-                  href="https://en.wikipedia.org/wiki/Bukhara" data-lang-item="intro_p1_bukhara">
-                  Bukhara<i class="fas fa-external-link-alt"></i></a>,
-                I have spent my childhood years with full of curiosity towards science and nature. I used to take apart
-                old electronics and pondered to make sense of how they would work.</p>
-              <p class="card-text p2 remaining" data-lang-item="intro_p2">
-                Then, in my teenage years, I started learning English and with that came my whole new perspective of the
-                world. The more I learned about other cultures, the more I wanted to go out into the world and see it
-                for myself. Here I am, after a few years, working abroad in Japan. The rest is history.
-              </p>
-              <p class="card-text see-more">
-                <small class="text-muted" data-lang-item="intro_see_more">see more</small> <i
-                  class="fas fa-angle-double-down"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Abilities section with swiper.js -->
-    <section id="abilities" class="container">
-      <!-- <header>
-        <h2>Technologies I have worked with</h2>
-      </header> -->
-
-      <!-- Swiper -->
-      <div class="swiper-container" loading="lazy">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="img/Javascript.webp" type="image/webp">
-              <source srcset="img/Javascript.png" type="image/png">
-              <img src="img/Javascript.png" alt="" srcset="">
-            </picture>
-            <h4 class="technology-name card-header">JavaScript</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_js">I have been using JavaScript in most of my
-              projects. The ones you can
-              directly see are Covid-19 data analyzer, <a href="reversi/Reversi/reversi.html">Reversi game</a> and the page you are looking at has some JS
-              involved. Check out the source codes in my Github profile.</p>
-          </div>
-          <div class="swiper-slide card shadow">
-            <img src="img/html.png" alt="" srcset="">
-            <h4 class="technology-name card-header">HTML5</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_html5">HTML5 was my introduction to programming. It
-              is a new version of the
-              language HTML, with new elements, attributes, and behaviors that allows more diverse and powerful Web
-              sites and applications. Please refer to the inspection window to look at how I code in HTML.</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/css.png" alt="" srcset="">
-            <h4 class="technology-name card-header">CSS</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_css">I would be no developer if I did not know CSS.
-              It is what styles all of
-              the web. Besides plain css, I also use preprocessors like Sass, CSS powered frameworks like Bootstrap and
-              Tailwind CSS in my projects. Curious to find out how this page's design came to be?</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/django.png" alt="" srcset="">
-            <h4 class="technology-name card-header">Django</h4>
-            <p class="technology-description" data-lang-item="swiper_django">Django was my very first step towards
-              full-stack development. It is at the
-              core of my personal website and projects that involve databases and REST APIs. Django's model architecture
-              makes it easier for me to work with different databases. Plus, I can scale anything up in no time with
-              Django.</p>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="img/python.webp" type="image/webp">
-              <source srcset="img/python.png" type="image/png">
-              <img src="img/python.png" alt="" srcset="">
-            </picture>
-            <h4 class="technology-name card-header">Python</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_python">Python - the language on the hype, yet it
-              is what really pushed me into
-              determining my career. I have created news aggregators, web-scrapers, user authentication systems,
-              websites, automated my workflow with Python. Given the adequate time, I can do almost anything - any thing
-              with Python.</p>
-          </div>
-
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="img/aws.webp" type="image/webp">
-              <source srcset="img/aws.jpg" type="image/jpg">
-              <img src="img/aws.jpg" alt="" srcset="">
-            </picture>
-            <h4 class="technology-name card-header">AWS</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_aws">Amazon's Web Services are really making a lot
-              of our lives easier. I am a
-              customer, myself, deploying my projects, using AWS databases, storing my files and so on to the cloud. If
-              you are thinking of scaling your business to the next level, AWS is a way to go, and I am happy to help!
-            </p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="img/C.png" alt="" srcset="">
-            <h4 class="technology-name card-header">C</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_c">C is the father of programming languages, some
-              say. I first got to work
-              with it in my first job. I created command line games, binary file analyzers and back-end systems with it.
-              It is super fast. In case you're into embedded systems development and you need a hand, let me know.</p>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="img/kotlin.webp" type="image/webp">
-              <source srcset="img/kotlin.png" type="image/png">
-              <img src="img/kotlin.png" alt="" srcset="">
-            </picture>
-            <h4 class="technology-name card-header">Kotlin</h4>
-            <p class="technology-desctiption" data-lang-item="swiper_kotlin">Yes, I can also create mobile applications
-              using Kotlin in Android Studio.
-              Although I am new to mobile app development, creating an app of any complexity is one search away, if you
-              know what I mean. I have created calculators, educational testing apps and a music player.</p>
-          </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-  </main>
-
-
-
-
-
-
-  <!-- Footer -->
-  <footer class="text-center text-lg-start">
-    <ul class="social-media">
-      <li><a href="https://github.com/uzbeki" target="_blank"><i loading="lazy" class="fab fa-fw fa-github"></i></a>
-      </li>
-      <li><a href="https://t.me/BekhruzOtaev" target="_blank"><i loading="lazy" class="fab fa-fw fa-telegram"
-            style="color: #0088cc;" aria-hidden="true"></i></a>
-      </li>
-
-      <li><a href="https://www.youtube.com/channel/UCOIqzK2XBsKguBKvXJOL88w" target="_blank"><i style="color: #ff0000;"
-            loading="lazy" class="fab fa-fw fa-youtube"></i></a></li>
-
-      <li><a href="https://twitter.com/BekhruzOtaev" target="_blank">
-          <i loading="lazy" class="fab fa-fw fa-twitter" style="color: #1da1f2;"></i></a></li>
-      <li><a href="https://www.facebook.com/bekhruzotaev" target="_blank"><i style="color: #3b5998;" loading="lazy"
-            class="fab fa-fw fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="https://linkedin.com/in/bekhruzotaev" target="_blank"><i style="color: #0077b5;" loading="lazy"
-            class="fab fa-fw fa-linkedin"></i></a>
-      </li>
-    </ul>
-    <div class="text-center brand-logo">
-      <a class="text-light" href="https://bekhruz.com/">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <g id="Layer_2" data-name="Layer 2">
-            <g id="logo">
-              <g id="logo_main">
-                <path
-                  d="M6.5,64.6Q1.1,61.8.2,56.8a8,8,0,0,1,2-7.4,13.3,13.3,0,0,1,6.7-4,12.6,12.6,0,0,1,6.7,0,1.5,1.5,0,0,1,1.1,1.4,4.8,4.8,0,0,1-.1,2.1L16.4,50a20.7,20.7,0,0,0-9.5.6c-2.7,1-3.9,2.6-3.8,5.1S4.8,60.2,8,62a32.5,32.5,0,0,0,12.2,3.8Q31,67,38.5,63.7c5-2.2,7.7-5.3,8.2-9.3a7.7,7.7,0,0,0-3.6-7.6A16,16,0,0,0,33,44.6l-3,.3c-.7-1.4-.4-2.2.9-2.3a12.2,12.2,0,0,0,7.9-3.5,10.3,10.3,0,0,0,3.3-7.7c.1-3.2-.8-5.6-2.9-7s-5.5-2-10.3-1.7c-6.9.4-11.8,2.2-14.8,5.4-1.6,1.7-2,3.1-1.3,4.2s.1.2.2.3,0,.3-.4.5a5.1,5.1,0,0,1-4.5.1,2.2,2.2,0,0,1-.9-.7c-1.1-1.1-1-2.6.3-4.7s6.7-5.9,13.6-7.3a57.4,57.4,0,0,1,8.7-1.1c6.9-.3,12.3.5,16.1,2.2s5.7,4.8,5.5,8.9-3.7,9-10.1,11.8c9.9.2,14.8,3.4,14.6,9.8,0,3.5-1.7,6.6-4.9,9.3S43.3,66,37.7,67.2a59.5,59.5,0,0,1-18.6.8A32.5,32.5,0,0,1,6.5,64.6Zm22.2-20-1.5,7.2c-.3,1.4-.6,2.9-.8,4.6a38.3,38.3,0,0,0-.3,4.7v1.8a5.6,5.6,0,0,0,.2,1v.3a5.2,5.2,0,0,1-3.6.3c-1.5-.3-2.4-.9-2.6-1.9a5.7,5.7,0,0,1-.3-1.8c0-.7,0-1.6.1-3s.3-2.8.5-4.4.3-4.2.6-7.6.5-7.2.7-11.3a57.4,57.4,0,0,0,0-8.3l.6-.3,1.6-.5L26,25a7.4,7.4,0,0,1,2.1,0,3.8,3.8,0,0,1,1.7.7A5,5,0,0,1,31.2,29a24.9,24.9,0,0,1-.6,6C30,38,29.4,41.3,28.7,44.6Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M70,48.4a14.3,14.3,0,0,1-5.5,1.3,6.5,6.5,0,0,0,2.2,3.4,5.9,5.9,0,0,0,3.2,1.3,8,8,0,0,0,4.5-1.2,6,6,0,0,0,2.8-2.9c0-.2.1-.2.4.1s.4,1.1,0,2.1-2.1,2.7-4.3,3.8a13.5,13.5,0,0,1-7.2,1.3A11,11,0,0,1,59.3,55a7.6,7.6,0,0,1-2.4-6.6,12.5,12.5,0,0,1,4.7-8.7,19.8,19.8,0,0,1,3.8-2,14,14,0,0,1,3.8-.7,6.7,6.7,0,0,1,2.8.7A4.1,4.1,0,0,1,74.2,41a6.3,6.3,0,0,1-.8,4.4A8.5,8.5,0,0,1,70,48.4ZM64.3,48c2.4-1.4,3.7-4,4-7.9,0-.8,0-1.4-.3-1.5s-.5,0-1,.5A15.5,15.5,0,0,0,64.4,47,2.8,2.8,0,0,0,64.3,48Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M83.1,44.2a16.5,16.5,0,0,1,3.3-4.7,11.1,11.1,0,0,1,3.9-2.6,7.7,7.7,0,0,1,3.6-.5,3.8,3.8,0,0,1,2.5,1.5,7.5,7.5,0,0,1,1,3.6,7.4,7.4,0,0,1-1.3,4.3,9,9,0,0,1-3.8,3.7c-.5.3-.3.8.4,1.5a10.2,10.2,0,0,0,3.7,2.7,2.6,2.6,0,0,0,2.4-.7,7.7,7.7,0,0,0,1.7-2.7c0-.2.2-.2.5.1a2.2,2.2,0,0,1-.1,2.1,11.7,11.7,0,0,1-3.6,4.4A5,5,0,0,1,92.6,58a14.2,14.2,0,0,1-4.4-2.9c-1.7-1.6-2.9-2.9-3.8-3.9s-.6-1.7.2-2.1a16.1,16.1,0,0,0,3.8-3.3,3.6,3.6,0,0,0,1.1-2.6,4.8,4.8,0,0,0-.5-1.8c-.8-.9-1.8-.4-3.2,1.4s-3.1,6-3.6,10.7v3.3a6.3,6.3,0,0,1-4.4.4q-2.7-.5-3-2.4t.9-11.1c.8-5.7,1.3-10,1.5-12.8a58.1,58.1,0,0,0-.1-8.4l.6-.2,1.4-.5,2-.5h2a3.3,3.3,0,0,1,1.7.7,5.6,5.6,0,0,1,1.4,3.3,20.8,20.8,0,0,1-.7,5.9Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M106.3,45.1a14,14,0,0,1,5.3-5.7c2.2-1.3,4.1-1.6,5.9-1a2.4,2.4,0,0,1,1.6,2.4,22.6,22.6,0,0,1-.7,5.1l-.2,1.1-.6,3.2a14.9,14.9,0,0,0-.2,2.1c0,.7,0,1.2.2,1.4a.9.9,0,0,0,.6.6c.7.3,1.4,0,2.2-.9a10.3,10.3,0,0,0,1.7-3.1c0-.2.2-.2.5.1a2.1,2.1,0,0,1-.2,2.1,8.4,8.4,0,0,1-3.9,4,7.1,7.1,0,0,1-5.3,1q-3.7-1.2-2.7-9a18.9,18.9,0,0,1,.9-3.4,13.2,13.2,0,0,1,.6-2,1.8,1.8,0,0,0-.2-.9c-.5-.3-1.2,0-2.1.7a9.5,9.5,0,0,0-2.5,4,24.5,24.5,0,0,0-1.7,6.6,11.5,11.5,0,0,0,.1,1.9v1.4a6.6,6.6,0,0,1-4.5.4c-1.8-.3-2.8-1.1-2.9-2.4s.1-5.3.9-11.1,1.3-10,1.4-12.8a58.8,58.8,0,0,0,0-8.4l.6-.2,1.4-.5,2-.5h1.9a2.7,2.7,0,0,1,1.7.7,5,5,0,0,1,1.4,3.3,24.1,24.1,0,0,1-.6,5.9C107.6,37.4,106.7,42,106.3,45.1Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M124.3,41.5a3.9,3.9,0,0,1-3-2.3,2.7,2.7,0,0,1,.4-3,4.5,4.5,0,0,1,4-2.6c1.6.1,2.4,1.2,2.2,3.4a8.2,8.2,0,0,1-.1,1.4H131l2.5-.3h1.6a1.6,1.6,0,0,1,1.1.5c.4.6,0,3.5-1.2,8.6s-.8,6.9.5,7.3,1.6-.1,2.5-1a7.8,7.8,0,0,0,1.8-3c0-.2.2-.2.5.1s.4,1.1,0,2.1a9.5,9.5,0,0,1-4.3,4.1q-3.1,1.6-5.4.9c-2.8-.8-3.9-3.8-3.1-9l1.2-6.7H127a39.5,39.5,0,0,1-4.6,11c-.7,1.1-1.3,1.4-1.7.7a.4.4,0,0,1-.1-.3C122.4,50.6,123.6,46.7,124.3,41.5Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M151.9,39.9a6,6,0,0,1,3.7-1.3,5.5,5.5,0,0,1,3.3,1.4,34,34,0,0,0-1.1,7.1c-.4,4.6,0,7.1,1.1,7.4s1.4-.1,2.1-1a11.2,11.2,0,0,0,1.5-3.1c0-.2.2-.1.5.1s.4,1.1-.1,2.1a8.9,8.9,0,0,1-3.9,4.2,6.6,6.6,0,0,1-5.5.5c-1.9-.6-3-2.4-3.4-5.4a10.7,10.7,0,0,1-3.5,4.3,6,6,0,0,1-4.3,1.4,4.6,4.6,0,0,1-3.5-2.5,10.2,10.2,0,0,1-.7-6.3c.6-4.8.9-8,.7-9.7l1.1-.3a8.3,8.3,0,0,1,2-.5,7.2,7.2,0,0,1,2.5-.2,3.3,3.3,0,0,1,1.9.8c1.2,1.2,1.3,3.8.1,7.9s-1.4,7.4-.1,7.4,1.2-.6,1.9-1.8a20.5,20.5,0,0,0,1.5-4.2,28.3,28.3,0,0,1,.3-4.1A6.1,6.1,0,0,1,151.9,39.9Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M169.8,57.1q-2.2,2.5-3.9,2.1c-1.6-.5-2.3-1.7-2.1-3.8a5.4,5.4,0,0,1,2.9-4.5,5.5,5.5,0,0,1,4.9-.2c1-2,1.6-3.3,1.9-4.1a.5.5,0,0,0,.2-.4l-1.8.4a10,10,0,0,1-5.4-.9,51.3,51.3,0,0,1-3.7,7.2c-.7,1.2-1.2,1.4-1.6.8a.8.8,0,0,1-.1-.3,37.8,37.8,0,0,0,3.2-9.3,7.9,7.9,0,0,1-2.4-3.6,6.7,6.7,0,0,1,.1-4.2,3.5,3.5,0,0,1,2.2-2.1,3.1,3.1,0,0,1,3.1.2,3.6,3.6,0,0,1,1.4,3.1,7.8,7.8,0,0,1-.2,1.6,26.8,26.8,0,0,0,9.4-.6,5.1,5.1,0,0,1,2.5-2.1,1.3,1.3,0,0,1,1.6.8c.3.7,0,2-1.1,3.9a11.9,11.9,0,0,1-4.8,4.3,1.5,1.5,0,0,0-.3.7,1.3,1.3,0,0,0-.3.7,40,40,0,0,1-2.2,4.6c2.8,1.4,5,2.1,6.6,2s2.8-1,3.4-3c.1-.2.3-.1.6.1a2.2,2.2,0,0,1-.1,2.1c-2.2,4.7-5,6.8-8.3,6.3A20.4,20.4,0,0,1,169.8,57.1Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M193.7,56.8a7.1,7.1,0,0,1-3.8,1.4,3.5,3.5,0,0,1-2.6-1.3,4.1,4.1,0,0,1-1.3-3.3,3.9,3.9,0,0,1,1.9-2.9,6.7,6.7,0,0,1,3.9-1.2,4.5,4.5,0,0,1,3.3,1.2,3.8,3.8,0,0,1,1,2.9A4.3,4.3,0,0,1,193.7,56.8Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M207.9,42.9a5.9,5.9,0,0,0,.7-3c0-.4-.1-.7-.3-.8a.8.8,0,0,0-.8-.1,2.4,2.4,0,0,0-1,.8c-.8,1.1-1.4,3.3-1.7,6.8a8.2,8.2,0,0,0,1.1,5.5,5.1,5.1,0,0,0,4.2,2.2,8.8,8.8,0,0,0,4.7-1.1,5.6,5.6,0,0,0,2.8-2.9c0-.2.1-.2.4.1s.4,1.1,0,2.1a9.3,9.3,0,0,1-4.2,3.8,12,12,0,0,1-7.3,1.3,10,10,0,0,1-6.7-2.9,7.7,7.7,0,0,1-2.5-6.8,11.7,11.7,0,0,1,1.9-5.5A10.1,10.1,0,0,1,203,39a19.8,19.8,0,0,1,4.5-1.5,6.9,6.9,0,0,1,4.1.6,5.7,5.7,0,0,1,2.7,2.8,4.5,4.5,0,0,1,.1,3.6q-1.3,3-6.6,1.5c-1.4-.5-2.1-.8-2.1-1A3.5,3.5,0,0,0,207.9,42.9Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M217.5,55.1a7.6,7.6,0,0,1-2.3-6.7,10.2,10.2,0,0,1,3.8-7.6,10.7,10.7,0,0,1,6.9-2.4,2.7,2.7,0,0,1,2.5-1.8c1.5-.3,2.7.6,3.6,2.6a17.2,17.2,0,0,1,.8,7.8,12.1,12.1,0,0,1-.7,3.4h.2a1.1,1.1,0,0,0,.8-.2l.8-.4.6-.6.5-.6.3-.6.2-.2c.2-.3.4-.2.6.1s.2.9-.1,1.5-2.5,2.7-4,2.7h-.6a9.2,9.2,0,0,1-7.9,5.3A7.2,7.2,0,0,1,217.5,55.1Zm7.8-15.5H225a5.8,5.8,0,0,0-1.6,2.9,24.1,24.1,0,0,0-.7,4.9,10,10,0,0,0,.8,4.6,3.1,3.1,0,0,0,2.5,1.7c1.4.1,2.5-.7,3.6-2.2a7.6,7.6,0,0,1-3.7-4A11.2,11.2,0,0,1,225.3,39.6Zm5.1,10.5a8.2,8.2,0,0,0,.7-2.5,5.6,5.6,0,0,0-.4-3.1,1.5,1.5,0,0,0-1.6-1,1.8,1.8,0,0,0-1.4,1,3.3,3.3,0,0,0,0,2.4A4.4,4.4,0,0,0,230.4,50.1Z"
-                  transform="translate(0 -19.3)" />
-                <path
-                  d="M247.7,44.9a17,17,0,0,1,.6-2.1,1.8,1.8,0,0,0-.1-1c-.6-.3-1.4.1-2.3,1.2a17.8,17.8,0,0,0-2.6,5.2,31.9,31.9,0,0,0-1.5,7.7v1.4a6.7,6.7,0,0,1-4.3.4q-2.4-.5-2.7-2.4a52.6,52.6,0,0,1-.1-9,40.2,40.2,0,0,0,0-8.5l1.1-.3,2.2-.6a13.2,13.2,0,0,1,2.7-.2,3.4,3.4,0,0,1,2,.8c1.2,1,1.6,3,1.1,6a12.2,12.2,0,0,1,4.9-4.7,6,6,0,0,1,5-.4,2,2,0,0,1,1.4,2.1,18.6,18.6,0,0,1-.5,4.7,13.9,13.9,0,0,1,5.2-6.1c2.2-1.2,4.1-1.4,5.8-.7s1.6,1.3,1.6,2.8a17.4,17.4,0,0,1-.9,5.8c-1,4.6-1,7,0,7.3s1.4,0,2.2-.9a10.3,10.3,0,0,0,1.7-3.1c0-.2.1-.2.4.1s.4,1.1,0,2.1a8.6,8.6,0,0,1-4,4,6.9,6.9,0,0,1-5.2,1q-3.9-1.2-2.7-9a23.3,23.3,0,0,1,.8-3.6,11.4,11.4,0,0,1,.7-2.1,1.3,1.3,0,0,0-.2-1c-.6-.3-1.3.1-2.2,1.2a17.8,17.8,0,0,0-2.6,5.2,27.7,27.7,0,0,0-1.5,7.7q.1.9,0,.9a6.4,6.4,0,0,1-4.5.6c-1.8-.4-2.8-1.2-2.9-2.6a30.8,30.8,0,0,1,.4-6.3A23.7,23.7,0,0,1,247.7,44.9Z"
-                  transform="translate(0 -19.3)" />
-              </g>
-            </g>
-          </g>
-        </svg>
-      </a>
-    </div>
-
-  </footer>
-
-
-  <!-- post-scripts -->
-  <script src="js/swiper/swiper-bundle.min.js"></script>
-  <script src="js/lang.js" defer></script>
-
-</body>
+        </footer>
+    </body>
 
 </html>

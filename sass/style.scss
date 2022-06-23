@@ -15,14 +15,17 @@ a {
 
 nav {
 	background-color: var(--navbar-dark);
+
 	.navbar-brand {
 		max-height: 50px;
 	}
+
 	.navbar-toggler {
 		i {
 			color: var(--brand-color);
 		}
 	}
+
 	a,
 	.dropdown-item {
 		color: var(--navbar-dark-text);
@@ -31,12 +34,15 @@ nav {
 			color: var(--brand-color);
 		}
 	}
+
 	.navbar-brand svg {
 		transform: scale(0.7);
 	}
+
 	#initB {
 		opacity: 25%;
 	}
+
 	#collapseMenu {
 		ul.dropdown-menu {
 			background-color: var(--dark-dropdown-bg);
@@ -48,46 +54,56 @@ nav {
 	.nav-item {
 		padding-left: 0.75rem;
 	}
-	#login-nav {
+
+	#settings-nav {
 		.dropdown {
 			display: grid;
 		}
+
 		margin-left: 0 !important;
+
 		label {
 			margin-right: 1rem;
 			background-color: inherit;
 		}
+
 		#settingsDropdown {
 			@include flexCenter;
 			padding-left: 3px;
 			color: var(--text-color);
 			border-color: inherit;
 			box-shadow: none;
+
 			&::after,
 			i {
 				color: var(--brand-color);
 				transition: transform 0.5s ease-in-out;
 			}
+
 			&:hover {
 				&::after {
 					color: var(--brand-color-variant);
 				}
+
 				i {
 					transform: scale(1.2) rotate(360deg);
 					color: var(--brand-color-variant);
 				}
 			}
+
 			@include mq(800px) {
 				& {
 					justify-content: unset;
 
 					padding-left: 0;
+
 					&:hover i {
 						transform: rotate(360deg);
 					}
 				}
 			}
 		}
+
 		.dropdown-menu-custom {
 			color: var(--text-color);
 			position: absolute;
@@ -118,10 +134,13 @@ nav {
 				}
 			}
 		}
+
 		.dropdown-menu-custom.show_me {
 			display: inherit;
 		}
+
 		#language_selector {
+			cursor: pointer;
 			color: var(--brand-color);
 			background-color: var(--dark-dropdown-bg);
 			box-shadow: none;
@@ -130,6 +149,7 @@ nav {
 
 		.theme-toggle {
 			.label {
+				cursor: pointer;
 				position: relative;
 				background-color: var(--dark-dropdown-bg);
 				display: flex;
@@ -147,6 +167,7 @@ nav {
 					color: var(--sun-color);
 				}
 			}
+
 			.ball {
 				width: 22px;
 				height: 22px;
@@ -158,14 +179,17 @@ nav {
 				transition: transform 0.3s ease-in-out,
 					background-color 0.3s linear;
 			}
+
 			input[type="checkbox"] {
 				opacity: 0;
 				position: absolute;
 			}
+
 			input[type="checkbox"]:checked + .label .ball {
 				transform: translateX(34px);
 			}
 		}
+
 		a.nav_login {
 			display: flex;
 			align-items: center;
@@ -176,6 +200,7 @@ nav {
 				}
 			}
 		}
+
 		a.nav_login::after {
 			font-family: "Font Awesome 5 Free";
 			content: "\f2f6";
@@ -191,7 +216,7 @@ nav {
 #particles-js {
 	position: absolute;
 	z-index: -1;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	top: 0;
 	bottom: 0;
@@ -209,20 +234,24 @@ nav {
 		.form-label {
 			color: var(--text-color);
 		}
+
 		.btn-sign-in {
 			background: var(--btn-accent-color);
 			color: var(--btn-text-color);
 			font-size: inherit;
 		}
+
 		button {
 			i {
 				color: var(--github-icon-color);
 				font-size: 1.4rem;
 			}
 		}
+
 		.btn-facebook {
 			background-color: var(--facebook-icon-color);
 		}
+
 		.btn-google {
 			i {
 				&::before {
@@ -230,9 +259,11 @@ nav {
 				}
 			}
 		}
+
 		.btn-twitter {
 			background-color: var(--twitter-icon-color);
 		}
+
 		.btn-github {
 			background-color: var(--github2-icon-color);
 		}
@@ -264,6 +295,7 @@ main {
 			border-top: 1px solid var(--card-intro-border-color);
 			border-left: 1px solid var(--card-intro-border-color);
 			backdrop-filter: blur(5px);
+
 			.intro-img {
 				margin: 1%;
 				display: grid;
@@ -282,10 +314,12 @@ main {
 						font-size: 1.1rem;
 					}
 				}
+
 				.card-body {
 					i {
 						opacity: 0.5;
 					}
+
 					h5 {
 						color: var(--brand-color);
 						font-style: italic;
@@ -294,13 +328,7 @@ main {
 					p.p1 {
 						a {
 							i {
-								display: none;
 								margin-left: 5px;
-							}
-							&:hover {
-								i {
-									display: inherit;
-								}
 							}
 						}
 					}
@@ -310,6 +338,7 @@ main {
 							display: none;
 						}
 					}
+
 					.see-more {
 						display: none;
 						place-content: center;
@@ -320,10 +349,12 @@ main {
 								margin-left: 5px;
 							}
 						}
+
 						@include mq(800px) {
 							display: grid;
 							grid-auto-flow: column;
 						}
+
 						p.p1 {
 							@include mq(800px) {
 								margin-bottom: 0;
@@ -340,6 +371,7 @@ main {
 		position: relative;
 		display: inline-block;
 	}
+
 	section#abilities {
 		.swiper-slide {
 			position: relative;
@@ -355,9 +387,11 @@ main {
 				border-top-left-radius: 10px;
 				border-top-right-radius: 10px;
 			}
+
 			h4 {
 				color: var(--swiper-header-color);
 			}
+
 			p {
 				padding: 1rem;
 			}
@@ -366,18 +400,13 @@ main {
 }
 
 footer {
-	background-color: var(--navbar-dark);
-	box-shadow: 0px -9px 20px 3px rgba(0, 0, 0, 0.24);
+	// background-color: var(--navbar-dark);
+	// box-shadow: 0px -9px 20px 3px rgba(0, 0, 0, 0.24);
 	margin-top: 2rem;
 	padding-top: 1rem;
 	display: grid;
 	place-content: center;
 
-	.input-group {
-		display: grid;
-		grid-auto-flow: column;
-		place-content: center;
-	}
 	.social-media {
 		position: relative;
 		background: inherit;
@@ -397,6 +426,7 @@ footer {
 				transform: scale(1.2);
 				transition: transform 0.2s;
 			}
+
 			.fa-github {
 				color: var(--github-icon-color);
 			}
@@ -433,6 +463,7 @@ footer {
 	--swiper-theme-color: var(--brand-color);
 	--light-card-bg-color-dark: #f7f7f7;
 	--settings-border-color: var(--text-color2);
+
 	.dropdown-menu-custom {
 		background-color: var(--light-card-bg-color-dark);
 	}

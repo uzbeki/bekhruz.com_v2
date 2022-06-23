@@ -151,7 +151,7 @@ const populate_uz = () => {
 const populate_ja = () => {
     Object.entries(language.ja).forEach(elem => {
         const el = grab(elem[0])
-        console.log(el)
+        // console.log(el)
         if (el) {
             el.textContent = elem[1]
             // console.log(elem)
@@ -170,7 +170,7 @@ const populate_en = () => {
 
 function language_changer() {
     let value = selects.options[selects.selectedIndex].value
-    console.log("Changed: ", value)
+    // console.log("Changed: ", value)
     if (value == "uz") {
         localStorage.setItem('currentLanguage', 'uz')
         populate_uz()
@@ -226,18 +226,6 @@ window.onload = () => {
         current_language = localStorage.getItem('currentLanguage')
         language_changer()
     })
-    const settingsDropdownHandler = () => {
-        const drop = document.querySelector(".dropdown-menu-custom")
-        drop.classList.toggle("show_me")
-    }
-    // settingsDropdown custom toggle
-    document.querySelector("#settingsDropdown").addEventListener('click', settingsDropdownHandler)
-    document.querySelector(".dropdown-menu-custom").addEventListener('mouseleave', settingsDropdownHandler)
-    document.querySelector("main").addEventListener('click', () => {
-        document.querySelector(".dropdown-menu-custom").classList.remove("show_me");
-        document.querySelector('.navbar-collapse.collapse').classList.remove('show')
-    })
-
 
 
     // theme changer dark - light modes
@@ -274,6 +262,4 @@ window.onload = () => {
             disableDarkMode()
         }
     })
-
-    let current_swiper = swiper()
 }
