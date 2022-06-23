@@ -1,7 +1,6 @@
 /* Reversie Game made in HTML/CSS/JS */
-const table = document.getElementById("game-table");　 // テーブル
-const table_length = document.getElementById("game-table").rows[0].cells.length;　 //テーブルのサイズ
-
+const table = document.getElementById("game-table"); // テーブル
+const table_length = document.getElementById("game-table").rows[0].cells.length; //テーブルのサイズ
 // 横、縦、斜めの確認に必要のある方向の計算し方
 const directions = [
     [0, -1],
@@ -18,12 +17,12 @@ const directions = [
 class Player {
     constructor(color) {
         this.color = color; //プレイヤの色
-    };
+    }
     //プレイヤのボードにある全てのピース
     all_pieces = function all_pieces() {
         return document.querySelectorAll(`p.${this.color}`);
-    }
-};
+    };
+}
 const black = new Player("black"); //黒側
 const white = new Player("white"); //白側
 
@@ -37,47 +36,52 @@ const change_turns = () => {
         opposite_player = black;
         document.querySelector("#white_score").style.visibility = "visible";
         document.querySelector("#black_score").style.visibility = "hidden";
-        
+
         document.getElementById("switch").checked = true;
     } else {
         current_player = black;
         opposite_player = white;
-        document.getElementById("switch").checked = false
+        document.getElementById("switch").checked = false;
         document.querySelector("#white_score").style.visibility = "hidden";
         // document.querySelector("#white_score > span").textContent = document.querySelectorAll("p.ok").length
         document.querySelector("#black_score").style.visibility = "visible";
-
     }
-}
+};
 
 //ボードの場所
 class Point {
     constructor(row, col) {
-        this.row = row;　 // 縦
-        this.col = col;　 // 横
+        this.row = row; // 縦
+        this.col = col; // 横
     }
 }
-let point = new Point(undefined, undefined)　 // Pointのオブジェクト　まだ場所不明でundefined
-
+let point = new Point(undefined, undefined); // Pointのオブジェクト　まだ場所不明でundefined
 // current_player(自分)の横、縦、斜めに置けれる場所を探す関数
 const check = (row, col, direction) => {
     /* // console.log("check() for possible mves"); */
     row_change = direction[0];
     col_change = direction[1];
     /* console.log(`checking (${row}, ${col} for ${row + row_change}, ${col + col_change})`); */
-    has_opposite = false;　 // 相手があるかどうか
+    has_opposite = false; // 相手があるかどうか
     let i, j;
-    for (i = row + row_change, j = col + col_change; i < table_length && j < table_length && i >= 0 && j >= 0; i += row_change, j += col_change) {
+    for (
+        i = row + row_change, j = col + col_change;
+        i < table_length && j < table_length && i >= 0 && j >= 0;
+        i += row_change, j += col_change
+    ) {
         let piece = table.rows[i].cells[j];
         /* // console.log(piece); */
-        if (piece.classList.contains(opposite_player.color)) {　 //もしpieceは相手の石だったら
+        if (piece.classList.contains(opposite_player.color)) {
+            //もしpieceは相手の石だったら
             /* // console.log(`opposite ${opposite_player.color} player found at ${row}, ${i}`); */
             has_opposite = true;
             continue;
-        } else if (piece.classList.contains("empty")) {　 //何もなかった場合
+        } else if (piece.classList.contains("empty")) {
+            //何もなかった場合
             /* // console.log(`empty player found at (${piece.parentNode.rowIndex},${piece.cellIndex})`); */
-            if (has_opposite) {　 // 前、相手があった場合、
-                piece.appendChild(document.createElement("p"));　 // 空いていることを表示するピース(p.ok)を入れる
+            if (has_opposite) {
+                // 前、相手があった場合、
+                piece.appendChild(document.createElement("p")); // 空いていることを表示するピース(p.ok)を入れる
                 piece.children[0].className = "ok";
                 piece.className = "ok";
                 piece.addEventListener("click", piece_clicked, { once: true });
@@ -89,15 +93,15 @@ const check = (row, col, direction) => {
             return;
         }
     }
-}
+};
 
-const show_moves = ()=>{
+const show_moves = () => {
     document.querySelectorAll("p.ok").forEach(element => {
         element.classList.add("show_moves");
     });
-    document.querySelector("#show_moves > i").classList.remove("fa-eye-slash")
-    document.querySelector("#show_moves > i").classList.add("fa-eye")
-}
+    document.querySelector("#show_moves > i").classList.remove("fa-eye-slash");
+    document.querySelector("#show_moves > i").classList.add("fa-eye");
+};
 
 // 上のcheck()を自分の全部のピースで、横、縦、斜めで確認する関数
 const possible_moves = () => {
@@ -110,8 +114,8 @@ const possible_moves = () => {
             check(row, cell, direction);
         });
     });
-    document.querySelector("#black_score > span").textContent = document.querySelectorAll("p.black").length
-    document.querySelector("#white_score > span").textContent = document.querySelectorAll("p.white").length
+    document.querySelector("#black_score > span").textContent = document.querySelectorAll("p.black").length;
+    document.querySelector("#white_score > span").textContent = document.querySelectorAll("p.white").length;
 };
 
 // check()が入れたp.okを消していく・リセットする関数
@@ -132,7 +136,11 @@ const outflank = (row, col, direction) => {
     row_change = direction[0];
     col_change = direction[1];
     let i, j, q, w;
-    for (i = row + row_change, j = col + col_change; i >= 0 && j >= 0 && i < 8 && j < 8; i += row_change, j += col_change) {
+    for (
+        i = row + row_change, j = col + col_change;
+        i >= 0 && j >= 0 && i < 8 && j < 8;
+        i += row_change, j += col_change
+    ) {
         let piece = table.rows[i].cells[j];
         if (piece.className == opposite_player.color) {
             /* // console.log("has opposite : "); */
@@ -154,23 +162,20 @@ const outflank = (row, col, direction) => {
         }
         return;
     }
-}
+};
 
-
-let go_ahead = false;　 // 関数の全部一気に実行させないために使おうとしています
-
+let go_ahead = false; // 関数の全部一気に実行させないために使おうとしています
 function piece_clicked(e) {
     /* // console.log(e); */
     if (e.path[0].childElementCount == 0) {
-        point.row = e.path[2].rowIndex
-        point.col = e.path[1].cellIndex
-            /* console.log(`${point.row}, ${point.col} clicked`); */
+        point.row = e.path[2].rowIndex;
+        point.col = e.path[1].cellIndex;
+        /* console.log(`${point.row}, ${point.col} clicked`); */
     } else {
         point.row = e.path[1].rowIndex;
         point.col = e.path[0].cellIndex;
         /* console.log(`${point.row}, ${point.col} clicked`); */
     }
-
 
     //outflank
     directions.forEach(direction => {
@@ -187,28 +192,30 @@ const is_over = () => {
         document.querySelector("#black-score").innerHTML = document.querySelectorAll("td.black").length;
         document.querySelector("#white-score").innerHTML = document.querySelectorAll("td.white").length;
         if (current_player.all_pieces().length > opposite_player.all_pieces().length) {
-            document.querySelector("#winner").textContent = current_player.color.toUpperCase()
+            document.querySelector("#winner").textContent = current_player.color.toUpperCase();
         } else if (current_player.all_pieces().length < opposite_player.all_pieces().length) {
             document.querySelector("#winner").textContent = opposite_player.color.toUpperCase();
         } else if (current_player.all_pieces().length == opposite_player.all_pieces().length) {
-            document.querySelector("#winner").textContent = "DRAW!"
+            document.querySelector("#winner").textContent = "DRAW!";
             document.querySelector("body > div.modal > div > div.message > p").remove();
         }
         document.querySelector(".modal").classList.toggle("show-modal");
     } else {
         return false;
     }
-}
+};
 document.querySelector("#clear-modal").addEventListener("click", () => {
-    document.querySelector(".modal").classList.toggle("show-modal")
-})
+    document.querySelector(".modal").classList.toggle("show-modal");
+});
 
 const start = () => {
     possible_moves();
     document.querySelector("#start_btn").remove();
-    document.querySelector("#reset_btn").style.display = "inline-block"
-}
+    document.querySelector("#reset_btn").style.display = "inline-block";
+};
 
-const game_reset = ()=>{
+window.onload = () => start();
+
+const game_reset = () => {
     // todo gotta make game reset button
-}
+};
