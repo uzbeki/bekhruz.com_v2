@@ -82,7 +82,7 @@ const language = {
 
     },
     ja: {
-        nav_projects: "学歴",
+        nav_projects: "履歴書",
         nav_reversi: "オセロ",
         nav_covid19: "コロナ情報",
         nav_action1: "Action",
